@@ -1,0 +1,375 @@
+#+TITLE: Other Papers
+
+
+* TODO Advances in Computational Studies of Potential Drug Targets in Mycobacterium tuberculosis.
+https://www.ncbi.nlm.nih.gov/pubmed/30084331
+* TODO Hybrid design of isonicotinic acid hydrazide derivatives: machine learning studies, synthesis and biological evaluation of their anti-tuberculosis activity.
+https://www.ncbi.nlm.nih.gov/pubmed/30973110
+* TODO Machine learning and tubercular drug target recognition.
+https://www.ncbi.nlm.nih.gov/pubmed/24245763
+
+
+
+
+
+* WAIT Ahmed2020 - Non-tuberculous mycobacterial infections—A neglected and emerging problem
+** Notes
+- Survey paper
+- Could be used build up the background for the need for research in NTM
+** FileName
+- Ahmed2020_NonTuberculosisMycoANeglectedAndEmergingProblem.pdf
+** Abstract
+- The incidence of NTM infections is rising owing to a growing population of
+  immunocompromised and vulnerable individuals, complex medical and surgical
+  procedures, as well as increased awareness and diagnostic capabilities.
+** FutureWork
+- Simpler and more rapid tests would be ideal in making the diagnosis of NTM
+  disease more quickly. However, the development of such tests is complicated
+  by the large number of NTM species that can cause disease and by the criteria
+  for disease, which require more than just the presence of the microorganism.
+  As a result, NTM disease will require multiple diagnostic parameters, leading
+  to delays and higher costs. More specific biomarkers to monitor the progress
+  of treatment and test cure are lacking.
+ 
+* STRT Aze2015 - Genomics and Machine Learning for Taxonomy Consensus: The Mycobacterium tuberculosis Complex Paradigm
+** Notes
+- Can adopt a similar approach towards the classification of NTB lineages
+- Can alter the algorithm to XGBoost to Neural Networks to improve accuracy
+** FileName
+- Aze2015_GenomicsAndMachine.pdf
+** Abstract
+- Mycobacterium tuberculosis complex taxonomy has rapidly evolved in the last 20
+  years through intensive clinical isolation, advances in sequencing and in the
+  description of fast-evolving loci (CRISPR and MIRU-VNTR)
+
+- The objectives of this study were 1) to explicit the consensus that exists
+  between the alternative taxonomies, and 2) to provide an on-line tool to ease
+  classification of new isolates. Genotyping (24-VNTR, 43-spacers spoli-
+  gotypes, IS6110-RFLP) was undertaken for 3,454 clinical isolates from the
+  Netherlands (2004-2008). The resulting database was enlarged with African
+  isolates to include most human tuberculosis diversity. Assignations were
+  obtained using TB-Lineage, MIRU- VNTRPlus, SITVITWEB and an algorithm from
+  Borile et al
+ 
+- Original and consensus assignations of the all isolates from the database were
+  subsequently implemented into an ensemble learning approach based on Machine
+  Learning tool Weka to derive a classification scheme.
+ 
+- When applied to independent datasets, it was able to suggest new sublineages
+  such as pseudo-Beijing. This Lineage Prediction tool, efficient on 15-MIRU,
+  24-VNTR and spoligotype data is available on the web interface “TBminer.”
+ 
+- We successfully used Machine Learning on a large dataset to set up and make
+  available the first consensual taxonomy for human Mycobacterium tuberculosis
+  complex
+ 
+** Conclusion
+- We developed an approach making use of standard typing data for human M.
+tuberculosis isolates to infer a consensual taxonomy concordant with most
+up-to-date data on Whole Genome Sequencing diversity.
+
+- We hope that the same approach can benefit other human pathogens having
+  alternative taxonomies according to Serotypes, CRISPRtypes, MLST-types such as
+  Salmo- nella, Listeria, Brucella, and more broadly to other organisms such as
+  bacterial plant- pathogens.
+ 
+* [?] Bagherian2019 - Machine learning approaches and databases for prediction of drug–target interaction: a survey paper
+** Notes
+- Not directly related to (N)TB
+- Survey paper
+- Analyzes various ML techniques
+- Mentions various drug-target-interaction databases
+** FileName
+- Bagherian2019_MachineLearning.pdf
+** Abstract
+- There is a need to develop novel and efficient prediction approaches in order
+  to avoid costly and laborious yet not-always-deterministic experiments to
+  determine drug–target interactions (DTIs) by experiments alone
+- In this article, we describe the data required for the task of DTI prediction
+  followed by a comprehensive catalog consisting of machine learning methods and
+  databases, which have been proposed and utilized to predict DTIs
+- The advantages and disadvantages of each set of methods are also briefly
+  discussed
+** Conclusion
+- Almost all the methods used in DTI prediction, particularly similarity-based
+  methods, heavily rely on assertions concerning similar drugs and similar
+  targets, the type of database used for the prediction plays a significant
+  role.
+- Future predictions should rely on more comprehensive inter- nal databases,
+  which would require a significant effort to map and curate data across the
+  sources that utilize different ways to define, name and identify the drugs and
+  targets.
+
+* STRT Cao2016 - Improving Tuberculosis Diagnostics Using Deep Learning and Mobile Health Technologies among Resource-Poor and Marginalized Communities
+** Notes
+- Image processing algorithms, CNN
+- They proposed an online database of X-ray images - by now this might have been developed
+** FileName
+- Cao2016_ImprovingDiagnosticsUsingDL.pdf
+** Abstract
+- The combination of machine learning and mobile computing techniques offers a
+  unique opportunity to accelerate the TB diagnosis among these communities
+
+- We first introduce major technique barriers and proposed system architecture
+
+- The first activity aims to develop large-scale, real-world and well-annotated
+  X-ray image database dedicated for automated TB screening.
+
+- The second research activity focus on developing effective and efficient
+  computational models (in particularly, deep convolutional neural networks
+  (CNN)-based models) to classify the image into different category of TB
+  manifestations
+ 
+- Our future work includes: (1) to further improve the performance of the
+  algorithms; and (2) to deploy our system in the city of Carabayllo in Perú, a
+  densely occupied urban community and high-burden TB
+ 
+** Conclusion
+- The first progress is to build a large-scale, real-world, and well-annotated chest X- ray image
+  database dedicated for TB screening.
+ 
+- The second progress is to develop effective and efficient computational model for TB manifestation
+  categorization.
+
+- We will continue to develop the large scale, real-world X-ray TB database, as
+  well as continuing to improve the performance of the computing algorithms
+
+* STRT Chen2018 - Deep Learning Predicts Tuberculosis Drug Resistance Status from Whole-Genome Sequencing Data
+** Notes
+- A good in-depth ML based paper
+- They've shared high-level implementation details briefly
+- Hyperparameters are also in the supplementary material
+- I was able to find the code on Github
+  https://github.com/biosharp-dotnet/wdnn
+- Could apply the same techniques to NTM
+- Could change the algorithm and apply on the same data
+- The author built upon the previous paper by improving the accuracy of the ML model - we could do the same with NTM
+** FileName
+- Chen2018_DeepLearningPredictsTuberculosis.pdf
+** Abstract
+- Using targeted or whole genome sequencing and conventional drug resistance
+  phenotyping data from 3,601 Mycobacterium tuberculosis strains, 1,228 of which
+  were multidrug resistant, we implemented the first multitask deep learning
+  framework to predict phenotypic drug resistance to 10 anti-tubercular drugs
+ 
+- The proposed wide and deep neural network (WDNN) achieved improved predictive
+  performance compared to regularized logistic regression and random forest
+ 
+** Conclusion
+- We demonstrate that L2 regression and MD-WDNN trained on a larger diverse
+  dataset using a method of aggregating rare variants outperforms our previously
+  reported random forest model. (Chen, 2018)
+
+- A few prior studies have utilized algorithmic or machine learning methods
+  using genomic data to account for the complex relationship between genotype
+  and drug resistance in MTB
+ 
+* Chen2019 - Beyond multidrug resistance: Leveraging rare variants with machine and statistical learning models in Mycobacterium tuberculosis resistance prediction
+** Notes
+- A good in-depth ML based paper
+- Could apply the same techniques to NTM
+- Could change the algorithm and apply on the same data
+** FileName
+- Chen2019_BeyondMultiDrugResistance.pdf
+** Abstract
+- Whole genome sequencing of clinical Mycobacterium tuberculosis isolates
+  promises to circumvent the long wait times and limited scope of conventional
+  phenotypic antimicrobial susceptibility, but gaps remain for predicting
+  phenotype accurately from genotypic data especially for certain drugs.
+ 
+- We collected targeted or whole genome sequencing and conventional drug
+  resistance phenotyping data from 3601 Mycobacterium tuberculosis strains
+  enriched for resistance to first- and second-line drugs, with 1228 multidrug
+  resistant strains
+
+- We investigated the utility of (1) rare variants and variants known to be
+  determinants of resistance for at least one drug and (2) machine and
+  statistical learning architectures in predicting phenotypic drug resistance to
+  10 anti-tuberculosis drugs
+
+ 
+** Conclusion
+* Ching2018 - Opportunities and obstacles for deep learning in biology and medicine
+** Notes
+https://github.com/greenelab/deep-review
+** FileName
+- Ching2018_OpportunitiesAndObstaclesForDLInBiology.pdf
+** Abstract
+** Conclusion
+* Deelder2019_MLPredictsAccurately.pdf
+** Title
+** Abstract
+** Conclusion
+* Djout2016_PredictiveModeling.pdf
+** Title
+** Abstract
+** Conclusion
+* Donohue2018_IncreasingNTMReportingRates.pdf
+** Title
+** Abstract
+** Conclusion
+* Doshi2017_TuberculosisControl.pdf
+** Title
+** Abstract
+** Conclusion
+* Ekins2013_EnhancingHitIdentification.pdf
+** Title
+** Abstract
+** Conclusion
+* Ekins2013_FusingDualEvent.pdf
+** Title
+** Abstract
+** Conclusion
+* Ekins2014_AreBiggerDataSets.pdf
+** Title
+** Abstract
+** Conclusion
+* Ekins2014_CombiningComputationalMethods.pdf
+** Title
+** Abstract
+** Conclusion
+* Ekins2016_MachineLearningModel.pdf
+** Title
+** Abstract
+** Conclusion
+* Ekins2017_MachineLearning.pdf
+** Title
+** Abstract
+** Conclusion
+* Engle2019_PerformanceOfQureAI.pdf
+** Title
+** Abstract
+** Conclusion
+* Greif2020_FrequencyOfNTM.pdf
+** Title
+** Abstract
+** Conclusion
+* Hussain2018_PredictingTreatmentOutcomes.pdf
+** Title
+** Abstract
+** Conclusion
+* Jamal2020_AIAndMLBasedPredictive.pdf
+** Title
+** Abstract
+** Conclusion
+* Kavvas2018_MachineLearning_.pdf
+** Title
+** Abstract
+** Conclusion
+* Khanna2018_EnsembleTechnique.pdf
+** Title
+** Abstract
+** Conclusion
+* Killian2019_LearningToPrescribe.pdf
+** Title
+** Abstract
+** Conclusion
+* Kouchaki2019_ApplicationOfML.pdf
+** Title
+** Abstract
+** Conclusion
+* Kouchaki2020_MultiLabelRandomForest.pdf
+** Title
+** Abstract
+** Conclusion
+** Supplementary
+*** Kouchaki2020_MultiLabel.zip
+*** Kouchaki2020_MultiLabel_DataSheet_1.pdf
+*** Kouchaki2020_MultiLabel_DataSheet_2.pdf
+*** Code
+Kouchaki2020_MultiLabelSLRF/checkmutations.py
+Kouchaki2020_MultiLabelSLRF/common_functions.py
+Kouchaki2020_MultiLabelSLRF/cvcodes.py
+Kouchaki2020_MultiLabelSLRF/demo-mtbmlrf.py
+Kouchaki2020_MultiLabelSLRF/ensemble_learning_multilabel.py
+Kouchaki2020_MultiLabelSLRF/fakefeat.csv
+Kouchaki2020_MultiLabelSLRF/fakepheno.csv
+Kouchaki2020_MultiLabelSLRF/feature_extraction.py
+Kouchaki2020_MultiLabelSLRF/load-dataset.py
+Kouchaki2020_MultiLabelSLRF/mutation_ranking.py
+Kouchaki2020_MultiLabelSLRF/print_stats.py
+Kouchaki2020_MultiLabelSLRF/readme
+Kouchaki2020_MultiLabelSLRF/treeplot.py
+
+* Kovalishyn2019_HybridDesign.pdf
+** Title
+** Abstract
+** Conclusion
+* Kumari2019_AGeneticProgramming.pdf
+** Title
+** Abstract
+** Conclusion
+* Lai2019_ComparisonOfThePredictiveOutcomes.pdf
+** Abstract
+** Conclusion
+* Lane2018_ComparingAndValidating.pdf
+** Abstract
+** Conclusion
+* Lin2001_ConservedCodonComposition.pdf
+** Abstract
+** Conclusion
+* LokeshKumar2019_PredictionOfMultiDrugResistant.pdf
+** Abstract
+** Conclusion
+* Mahe2019_ALargeScaleEvaluationTBProfiler.pdf
+** Abstract
+** Conclusion
+* Marino2016_ComputationalAndEmpirical.pdf
+** Abstract
+** Conclusion
+* Marques2019_PulmonaryNTMInfections.pdf
+** Abstract
+** Conclusion
+* Meldenez2015_OnCombiningMultiple.pdf
+** Abstract
+** Conclusion
+* Mikusova2016_LearningFromThePast.pdf
+** Abstract
+** Conclusion
+* Ngo2019_GenomicPrediction.pdf
+** Abstract
+** Conclusion
+* Periwal2011_PredictiveModels.pdf
+** Abstract
+** Conclusion
+* Ratnatunga2020_RiseOfNTMLungDisease.pdf
+** Abstract
+** Conclusion
+* Romero2020_DecisionTree.pdf
+** Abstract
+** Conclusion
+** Supplementary
+*** Romero2020_DecisionTree_Corrigendum.pdf
+* Sauer2018_FeatureSelection.pdf
+** Abstract
+** Conclusion
+* Schiff2018_ClinicalRelevanceOfNTM.pdf
+** Abstract
+** Conclusion
+* Sergeev2016_GenomeWide.pdf
+** Abstract
+** Conclusion
+* Vizcaino2010_ComputatationalPrediction.pdf
+** Abstract
+** Conclusion
+* Waman2019_MycobacterialGenomics.pdf
+** Abstract
+** Conclusion
+* Wang2020_ADeepLearningBasedMethod.pdf
+** Abstract
+** Conclusion
+* Weiner2017_HighThroughput.pdf
+** Abstract
+** Conclusion
+* Wilder2019_ImprovingTuberculosis.pdf
+** Abstract
+** Conclusion
+* Yang2017_MachineLearning.pdf
+** Abstract
+** Conclusion
+* Yang2019_DeepAMRForPredicting.pdf
+** Abstract
+** Conclusion
+* Zhang2020_AnIntegratedMLApproach.pdf
+** Abstract
+** Conclusion
