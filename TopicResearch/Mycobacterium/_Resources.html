@@ -1,0 +1,3139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <!-- 2020-05-07 Thu 23:13 -->
+    <meta http-equiv="Content-Type"
+    content="text/html;charset=utf-8" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1" />
+    <title>Other Papers</title>
+    <meta name="generator" content="Org mode" />
+    <meta name="author" content="Abhinav Sharma" />
+    <style type="text/css">
+    <!--/*-->
+<![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>
+*/--&gt;</style>
+    <link rel="stylesheet" type="text/css"
+    href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css" />
+    <link rel="stylesheet" type="text/css"
+    href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+    src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js">
+    </script>
+    <script type="text/javascript"
+    src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js">
+    </script>
+    <script type="text/javascript">// @license
+    magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt
+    GPL-v3-or-Later 
+    <!--/*-->
+<![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>
+*///--&gt; // @license-end</script>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="title">Other Papers</h1>
+      <div id="table-of-contents">
+        <h2>Table of Contents</h2>
+        <div id="text-table-of-contents">
+          <ul>
+            <li>
+              <a href="#org518e004">1. 
+              <span class="todo TODO">TODO</span>Advances in
+              Computational Studies of Potential Drug Targets in
+              Mycobacterium tuberculosis.</a>
+            </li>
+            <li>
+              <a href="#orga0dc8b5">2. 
+              <span class="todo TODO">TODO</span>Hybrid design of
+              isonicotinic acid hydrazide derivatives: machine
+              learning studies, synthesis and biological evaluation
+              of their anti-tuberculosis activity.</a>
+            </li>
+            <li>
+              <a href="#org712ca39">3. 
+              <span class="todo TODO">TODO</span>Machine learning
+              and tubercular drug target recognition.</a>
+            </li>
+            <li>
+              <a href="#orgd202e2b">4. 
+              <span class="todo WAIT">WAIT</span>Ahmed2020 -
+              Non-tuberculous mycobacterial infections—A neglected
+              and emerging problem</a>
+              <ul>
+                <li>
+                  <a href="#org39aafa5">4.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org7142082">4.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org46764a2">4.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgb9c2276">4.4. FutureWork</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgb30e7d8">5. 
+              <span class="todo STRT">STRT</span>Aze2015 - Genomics
+              and Machine Learning for Taxonomy Consensus: The
+              Mycobacterium tuberculosis Complex Paradigm</a>
+              <ul>
+                <li>
+                  <a href="#org6807e12">5.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org55ce533">5.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org19967a2">5.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgb998647">5.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org650f207">6. 
+              <span class="todo ___">[-]</span>Bagherian2019 -
+              Machine learning approaches and databases for
+              prediction of drug–target interaction: a survey
+              paper</a>
+              <ul>
+                <li>
+                  <a href="#org2b6165c">6.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org40db502">6.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org5db2a39">6.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org6ba220b">6.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org374ecea">7. 
+              <span class="todo STRT">STRT</span>Cao2016 -
+              Improving Tuberculosis Diagnostics Using Deep
+              Learning and Mobile Health Technologies among
+              Resource-Poor and Marginalized Communities</a>
+              <ul>
+                <li>
+                  <a href="#org484f5a3">7.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgda61369">7.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#orgc8fdfe9">7.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org938c130">7.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org065e28e">8. 
+              <span class="todo STRT">STRT</span>Chen2018 - Deep
+              Learning Predicts Tuberculosis Drug Resistance Status
+              from Whole-Genome Sequencing Data</a>
+              <ul>
+                <li>
+                  <a href="#org4300c46">8.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgf05b9c9">8.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org9478caf">8.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgc382094">8.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org0791e91">9. 
+              <span class="todo STRT">STRT</span>Chen2019 - Beyond
+              multidrug resistance: Leveraging rare variants with
+              machine and statistical learning models in
+              Mycobacterium tuberculosis resistance prediction</a>
+              <ul>
+                <li>
+                  <a href="#orgef11dcb">9.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org2f6b23b">9.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org54b0b5b">9.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org145d641">9.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgce4ae54">10. 
+              <span class="todo ___">[-]</span>Ching2018 -
+              Opportunities and obstacles for deep learning in
+              biology and medicine</a>
+              <ul>
+                <li>
+                  <a href="#orgf7bb134">10.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org0aadbf7">10.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#orge7758d1">10.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org77aeace">10.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org21e6707">11. 
+              <span class="todo STRT">STRT</span>Deelder2019 -
+              Machine Learning Predicts Accurately Mycobacterium
+              tuberculosis Drug Resistance From Whole Genome
+              Sequencing Data</a>
+              <ul>
+                <li>
+                  <a href="#orgeca9bb7">11.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org0703401">11.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org980c4d1">11.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org5ca26e6">11.4. Conclusion</a>
+                </li>
+                <li>
+                  <a href="#orgec07c11">11.5. Supplementary</a>
+                  <ul>
+                    <li>
+                      <a href="#orga1ade99">11.5.1. Deelder2019
+                      <sub>MLPredictsAccurately</sub>
+                      <sub>Data</sub>
+                      <sub>Sheet</sub>
+                      <sub>1.pdf</sub></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org1a01a39">12. 
+              <span class="todo ___">[?]</span>Djout2016 -
+              Predictive modeling targets thymidylate synthase ThyX
+              in Mycobacterium tuberculosis</a>
+              <ul>
+                <li>
+                  <a href="#orga608f0d">12.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgd1a22d4">12.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org2029d6b">12.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgf69d285">12.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org0abe5ab">13. 
+              <span class="todo STRT">STRT</span>Donohue2018 -
+              Increasing nontuberculous mycobacteria reporting
+              rates and species diversity identified in clinical
+              laboratory reports</a>
+              <ul>
+                <li>
+                  <a href="#orgd4bbb39">13.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgc17e54a">13.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#orgef50bcb">13.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org2a748e3">13.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgc3e0f89">14. 
+              <span class="todo ___">[-]</span>Doshi2017 -
+              Tuberculosis control, and the where and why of
+              artificial intelligence</a>
+              <ul>
+                <li>
+                  <a href="#orgfa5ac26">14.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org64eac41">14.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org5628344">14.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org6d40230">14.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgbe21b1a">15. 
+              <span class="done _X_">[X]</span>Ekins2013 -
+              Enhancing Hit Identification in Mycobacterium
+              tuberculosis Drug Discovery Using Validated
+              Dual-Event Bayesian Models</a>
+              <ul>
+                <li>
+                  <a href="#orgabdc549">15.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org65dd718">15.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org836d842">15.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgf889eb7">15.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org44a2ba8">16. 
+              <span class="done _X_">[X]</span>Ekins2013 - Fusing
+              Dual-Event Data Sets for Mycobacterium tuberculosis
+              Machine Learning Models and Their Evaluation</a>
+              <ul>
+                <li>
+                  <a href="#orgb95c596">16.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgb53aef7">16.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org88fd7d9">16.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org2cd7d23">16.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org800010b">17. 
+              <span class="done _X_">[X]</span>Ekins2014
+              <sub>AreBiggerDataSets.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org6ceb20b">17.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org90529a5">17.2. Title</a>
+                </li>
+                <li>
+                  <a href="#org231953f">17.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgf4ce832">17.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgd6ed5e3">18. 
+              <span class="done _X_">[X]</span>Ekins2014
+              <sub>CombiningComputationalMethods.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orge84f65e">18.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgd50722c">18.2. Title</a>
+                </li>
+                <li>
+                  <a href="#org002ec22">18.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org932a3bc">18.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org00fce43">19. 
+              <span class="done _X_">[X]</span>Ekins2016
+              <sub>MachineLearningModel.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org9f26349">19.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org3b724b3">19.2. Title</a>
+                </li>
+                <li>
+                  <a href="#orge353ac8">19.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org500306c">19.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgd66cb49">20. 
+              <span class="done _X_">[X]</span>Ekins2017
+              <sub>MachineLearning.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org4bc192e">20.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orge31e3b1">20.2. Title</a>
+                </li>
+                <li>
+                  <a href="#org1dbba15">20.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org309fda3">20.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org0078119">21. 
+              <span class="todo ___">[-]</span>Engle2019 -
+              Performance of Qure.ai automatic classifiers against
+              a large annotated database of patients with diverse
+              forms of tuberculosis</a>
+              <ul>
+                <li>
+                  <a href="#orgab84f7f">21.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org484e9da">21.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org2c72a04">21.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org7258d32">21.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org5b53a99">22. 
+              <span class="todo ___">[-]</span>Greif2020 - Species
+              Distribution and Isolation Frequency of
+              Nontuberculous Mycobacteria, Uruguay</a>
+              <ul>
+                <li>
+                  <a href="#org946d072">22.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgf12322f">22.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#orga30ec7d">22.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org131a5e7">22.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org24986d1">23. 
+              <span class="todo ___">[-]</span>Hicks2019 -
+              Evaluation of parameters affecting performance and
+              reliability of machine learning-based antibiotic
+              susceptibility testing from whole genome sequencing
+              data</a>
+              <ul>
+                <li>
+                  <a href="#org46e1335">23.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgfe7ae6a">23.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org248201b">23.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orge9dcb00">23.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org9b1f743">24. 
+              <span class="todo STRT">STRT</span>Hussain2018 -
+              Predicting treatment outcome of drug-susceptible
+              tuberculosis patients using machine-learning
+              models</a>
+              <ul>
+                <li>
+                  <a href="#org4491af5">24.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org544fba1">24.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#orga78425e">24.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgdc3e7e2">24.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org5d2948b">25. 
+              <span class="todo STRT">STRT</span>Jamal2020 -
+              Artificial Intelligence and Machine learning based
+              prediction of resistant and susceptible mutations in
+              Mycobacterium tuberculosis</a>
+              <ul>
+                <li>
+                  <a href="#org8c582d2">25.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org557c4c5">25.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#orgfae7288">25.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org8d4d7f5">25.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgc6e221f">26. 
+              <span class="todo STRT">STRT</span>Kavvas2018 -
+              Machine learning and structural analysis of
+              Mycobacterium tuberculosis pan-genome identifies
+              genetic signatures of antibiotic resistance</a>
+              <ul>
+                <li>
+                  <a href="#org94bb80f">26.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#orgd518b86">26.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#org935f5c2">26.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orga5f5271">26.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org618a08f">27. Khanna2018 - Ensemble
+              Technique for Prediction of T-cell Mycobacterium
+              tuberculosis Epitopes</a>
+              <ul>
+                <li>
+                  <a href="#org96ce888">27.1. Notes</a>
+                </li>
+                <li>
+                  <a href="#org73dfa63">27.2. FileName</a>
+                </li>
+                <li>
+                  <a href="#orgacba86e">27.3. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org41130d7">27.4. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org9712d79">28. Killian2019
+              <sub>LearningToPrescribe.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org45c508f">28.1. Title</a>
+                </li>
+                <li>
+                  <a href="#orga127682">28.2. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org8f55705">28.3. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org0e1e46a">29. Kouchaki2019
+              <sub>ApplicationOfML.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org9cdba12">29.1. Title</a>
+                </li>
+                <li>
+                  <a href="#orgeff3c95">29.2. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org6b837a8">29.3. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org3c332b7">30. Kouchaki2020
+              <sub>MultiLabelRandomForest.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org6821f88">30.1. Title</a>
+                </li>
+                <li>
+                  <a href="#org78ae72d">30.2. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgf90c729">30.3. Conclusion</a>
+                </li>
+                <li>
+                  <a href="#org1266f7c">30.4. Supplementary</a>
+                  <ul>
+                    <li>
+                      <a href="#org1a173d6">30.4.1. Kouchaki2020
+                      <sub>MultiLabel.zip</sub></a>
+                    </li>
+                    <li>
+                      <a href="#org0b40ceb">30.4.2. Kouchaki2020
+                      <sub>MultiLabel</sub>
+                      <sub>DataSheet</sub>
+                      <sub>1.pdf</sub></a>
+                    </li>
+                    <li>
+                      <a href="#orgb92fcf0">30.4.3. Kouchaki2020
+                      <sub>MultiLabel</sub>
+                      <sub>DataSheet</sub>
+                      <sub>2.pdf</sub></a>
+                    </li>
+                    <li>
+                      <a href="#org9312224">30.4.4. Code</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org6eee474">31. Kovalishyn2019
+              <sub>HybridDesign.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgd9e8be0">31.1. Title</a>
+                </li>
+                <li>
+                  <a href="#orgaa99050">31.2. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgf294b66">31.3. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org9049d28">32. Kumari2019
+              <sub>AGeneticProgramming.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgf79ac7b">32.1. Title</a>
+                </li>
+                <li>
+                  <a href="#org1783ad1">32.2. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org7bf7f05">32.3. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org93f66ca">33. Lai2019
+              <sub>ComparisonOfThePredictiveOutcomes.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orga461ee9">33.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org90864bc">33.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgc46dc90">34. Lane2018
+              <sub>ComparingAndValidating.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org3c56ed6">34.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orga71b7a5">34.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgf59bd97">35. Lin2001
+              <sub>ConservedCodonComposition.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgdfdda06">35.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org22d9249">35.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgeb1176f">36. LokeshKumar2019
+              <sub>PredictionOfMultiDrugResistant.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgf41cf33">36.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org3a4bccb">36.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgae17850">37. Mahe2019
+              <sub>ALargeScaleEvaluationTBProfiler.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org15d6473">37.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org56c6fbd">37.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org3cc37f1">38. Marino2016
+              <sub>ComputationalAndEmpirical.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org9176bfb">38.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org724ebed">38.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgafa4882">39. Marques2019
+              <sub>PulmonaryNTMInfections.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgaba0d78">39.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgec8e403">39.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org6de5c9e">40. Meldenez2015
+              <sub>OnCombiningMultiple.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgf82697a">40.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgc7292b3">40.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org3725a8b">41. Mikusova2016
+              <sub>LearningFromThePast.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgb773bbd">41.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgf58656c">41.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orge0dce1d">42. Ngo2019
+              <sub>GenomicPrediction.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgda7f557">42.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgb56db1b">42.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org9f1cd6d">43. Periwal2011
+              <sub>PredictiveModels.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org4c1e305">43.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org95bbc32">43.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org6fe6f5b">44. Ratnatunga2020
+              <sub>RiseOfNTMLungDisease.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org9e07094">44.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgd3a586e">44.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgbc4595f">45. Romero2020
+              <sub>DecisionTree.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org5fd4c0e">45.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgc331528">45.2. Conclusion</a>
+                </li>
+                <li>
+                  <a href="#org831879e">45.3. Supplementary</a>
+                  <ul>
+                    <li>
+                      <a href="#org5d72f85">45.3.1. Romero2020
+                      <sub>DecisionTree</sub>
+                      <sub>Corrigendum.pdf</sub></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org3331634">46. Sauer2018
+              <sub>FeatureSelection.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org270ea20">46.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org1d56a26">46.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orge092e93">47. Schiff2018
+              <sub>ClinicalRelevanceOfNTM.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org68a1609">47.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgc1b50bd">47.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orga208697">48. Sergeev2016
+              <sub>GenomeWide.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org23b9e6b">48.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org8001cbf">48.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgd4b68c6">49. Vizcaino2010
+              <sub>ComputatationalPrediction.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgf3050c0">49.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orgd7a44af">49.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org9920d3a">50. Waman2019
+              <sub>MycobacterialGenomics.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org8b7695d">50.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org11e0e5c">50.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org8187dab">51. Wang2020
+              <sub>ADeepLearningBasedMethod.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgb219dd1">51.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orga985613">51.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org1ccb995">52. Weiner2017
+              <sub>HighThroughput.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org3cb101e">52.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org3596830">52.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org614857f">53. Wilder2019
+              <sub>ImprovingTuberculosis.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#orgff744d1">53.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orga49c810">53.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org2b9594f">54. Yang2017
+              <sub>MachineLearning.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org2b9e421">54.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org44624a5">54.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#orgf153e95">55. Yang2019
+              <sub>DeepAMRForPredicting.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org465183d">55.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#org5731d90">55.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#org1791618">56. Zhang2020
+              <sub>AnIntegratedMLApproach.pdf</sub></a>
+              <ul>
+                <li>
+                  <a href="#org0035493">56.1. Abstract</a>
+                </li>
+                <li>
+                  <a href="#orga088806">56.2. Conclusion</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-org518e004" class="outline-2">
+        <h2 id="org518e004">
+        <span class="section-number-2">1</span>
+        <span class="todo TODO">TODO</span>Advances in
+        Computational Studies of Potential Drug Targets in
+        Mycobacterium tuberculosis.</h2>
+        <div class="outline-text-2" id="text-1">
+          <p>
+            <a href="https://www.ncbi.nlm.nih.gov/pubmed/30084331">
+            https://www.ncbi.nlm.nih.gov/pubmed/30084331</a>
+          </p>
+        </div>
+      </div>
+      <div id="outline-container-orga0dc8b5" class="outline-2">
+        <h2 id="orga0dc8b5">
+        <span class="section-number-2">2</span>
+        <span class="todo TODO">TODO</span>Hybrid design of
+        isonicotinic acid hydrazide derivatives: machine learning
+        studies, synthesis and biological evaluation of their
+        anti-tuberculosis activity.</h2>
+        <div class="outline-text-2" id="text-2">
+          <p>
+            <a href="https://www.ncbi.nlm.nih.gov/pubmed/30973110">
+            https://www.ncbi.nlm.nih.gov/pubmed/30973110</a>
+          </p>
+        </div>
+      </div>
+      <div id="outline-container-org712ca39" class="outline-2">
+        <h2 id="org712ca39">
+        <span class="section-number-2">3</span>
+        <span class="todo TODO">TODO</span>Machine learning and
+        tubercular drug target recognition.</h2>
+        <div class="outline-text-2" id="text-3">
+          <p>
+            <a href="https://www.ncbi.nlm.nih.gov/pubmed/24245763">
+            https://www.ncbi.nlm.nih.gov/pubmed/24245763</a>
+          </p>
+        </div>
+      </div>
+      <div id="outline-container-orgd202e2b" class="outline-2">
+        <h2 id="orgd202e2b">
+        <span class="section-number-2">4</span>
+        <span class="todo WAIT">WAIT</span>Ahmed2020 -
+        Non-tuberculous mycobacterial infections—A neglected and
+        emerging problem</h2>
+        <div class="outline-text-2" id="text-4"></div>
+        <div id="outline-container-org39aafa5" class="outline-3">
+          <h3 id="org39aafa5">
+          <span class="section-number-3">4.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-4-1">
+            <ul class="org-ul">
+              <li>Survey paper</li>
+              <li>Could be used build up the background for the
+              need for research in NTM</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org7142082" class="outline-3">
+          <h3 id="org7142082">
+          <span class="section-number-3">4.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-4-2">
+            <ul class="org-ul">
+              <li>Ahmed2020
+              <sub>
+              NonTuberculosisMycoANeglectedAndEmergingProblem.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org46764a2" class="outline-3">
+          <h3 id="org46764a2">
+          <span class="section-number-3">4.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-4-3">
+            <ul class="org-ul">
+              <li>The incidence of NTM infections is rising owing
+              to a growing population of immunocompromised and
+              vulnerable individuals, complex medical and surgical
+              procedures, as well as increased awareness and
+              diagnostic capabilities.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgb9c2276" class="outline-3">
+          <h3 id="orgb9c2276">
+          <span class="section-number-3">4.4</span>FutureWork</h3>
+          <div class="outline-text-3" id="text-4-4">
+            <ul class="org-ul">
+              <li>Simpler and more rapid tests would be ideal in
+              making the diagnosis of NTM disease more quickly.
+              However, the development of such tests is complicated
+              by the large number of NTM species that can cause
+              disease and by the criteria for disease, which
+              require more than just the presence of the
+              microorganism. As a result, NTM disease will require
+              multiple diagnostic parameters, leading to delays and
+              higher costs. More specific biomarkers to monitor the
+              progress of treatment and test cure are lacking.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-orgb30e7d8" class="outline-2">
+        <h2 id="orgb30e7d8">
+        <span class="section-number-2">5</span>
+        <span class="todo STRT">STRT</span>Aze2015 - Genomics and
+        Machine Learning for Taxonomy Consensus: The Mycobacterium
+        tuberculosis Complex Paradigm</h2>
+        <div class="outline-text-2" id="text-5"></div>
+        <div id="outline-container-org6807e12" class="outline-3">
+          <h3 id="org6807e12">
+          <span class="section-number-3">5.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-5-1">
+            <ul class="org-ul">
+              <li>Can adopt a similar approach towards the
+              classification of NTB lineages</li>
+              <li>Can alter the algorithm to XGBoost to Neural
+              Networks to improve accuracy</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org55ce533" class="outline-3">
+          <h3 id="org55ce533">
+          <span class="section-number-3">5.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-5-2">
+            <ul class="org-ul">
+              <li>Aze2015
+              <sub>GenomicsAndMachine.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org19967a2" class="outline-3">
+          <h3 id="org19967a2">
+          <span class="section-number-3">5.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-5-3">
+            <ul class="org-ul">
+              <li>Mycobacterium tuberculosis complex taxonomy has
+              rapidly evolved in the last 20 years through
+              intensive clinical isolation, advances in sequencing
+              and in the description of fast-evolving loci (CRISPR
+              and MIRU-VNTR)</li>
+              <li>The objectives of this study were 1) to explicit
+              the consensus that exists between the alternative
+              taxonomies, and 2) to provide an on-line tool to ease
+              classification of new isolates. Genotyping (24-VNTR,
+              43-spacers spoli- gotypes, IS6110-RFLP) was
+              undertaken for 3,454 clinical isolates from the
+              Netherlands (2004-2008). The resulting database was
+              enlarged with African isolates to include most human
+              tuberculosis diversity. Assignations were obtained
+              using TB-Lineage, MIRU- VNTRPlus, SITVITWEB and an
+              algorithm from Borile et al</li>
+              <li>Original and consensus assignations of the all
+              isolates from the database were subsequently
+              implemented into an ensemble learning approach based
+              on Machine Learning tool Weka to derive a
+              classification scheme.</li>
+              <li>When applied to independent datasets, it was able
+              to suggest new sublineages such as pseudo-Beijing.
+              This Lineage Prediction tool, efficient on 15-MIRU,
+              24-VNTR and spoligotype data is available on the web
+              interface “TBminer.”</li>
+              <li>We successfully used Machine Learning on a large
+              dataset to set up and make available the first
+              consensual taxonomy for human Mycobacterium
+              tuberculosis complex</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgb998647" class="outline-3">
+          <h3 id="orgb998647">
+          <span class="section-number-3">5.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-5-4">
+            <ul class="org-ul">
+              <li>We developed an approach making use of standard
+              typing data for human M.</li>
+            </ul>
+            <p>tuberculosis isolates to infer a consensual taxonomy
+            concordant with most up-to-date data on Whole Genome
+            Sequencing diversity.</p>
+            <ul class="org-ul">
+              <li>We hope that the same approach can benefit other
+              human pathogens having alternative taxonomies
+              according to Serotypes, CRISPRtypes, MLST-types such
+              as Salmo- nella, Listeria, Brucella, and more broadly
+              to other organisms such as bacterial plant-
+              pathogens.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org650f207" class="outline-2">
+        <h2 id="org650f207">
+        <span class="section-number-2">6</span>
+        <span class="todo ___">[-]</span>Bagherian2019 - Machine
+        learning approaches and databases for prediction of
+        drug–target interaction: a survey paper</h2>
+        <div class="outline-text-2" id="text-6"></div>
+        <div id="outline-container-org2b6165c" class="outline-3">
+          <h3 id="org2b6165c">
+          <span class="section-number-3">6.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-6-1">
+            <ul class="org-ul">
+              <li>Not directly related to (N)TB</li>
+              <li>Survey paper</li>
+              <li>Analyzes various ML techniques</li>
+              <li>Mentions various drug-target-interaction
+              databases</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org40db502" class="outline-3">
+          <h3 id="org40db502">
+          <span class="section-number-3">6.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-6-2">
+            <ul class="org-ul">
+              <li>Bagherian2019
+              <sub>MachineLearning.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org5db2a39" class="outline-3">
+          <h3 id="org5db2a39">
+          <span class="section-number-3">6.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-6-3">
+            <ul class="org-ul">
+              <li>There is a need to develop novel and efficient
+              prediction approaches in order to avoid costly and
+              laborious yet not-always-deterministic experiments to
+              determine drug–target interactions (DTIs) by
+              experiments alone</li>
+              <li>In this article, we describe the data required
+              for the task of DTI prediction followed by a
+              comprehensive catalog consisting of machine learning
+              methods and databases, which have been proposed and
+              utilized to predict DTIs</li>
+              <li>The advantages and disadvantages of each set of
+              methods are also briefly discussed</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org6ba220b" class="outline-3">
+          <h3 id="org6ba220b">
+          <span class="section-number-3">6.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-6-4">
+            <ul class="org-ul">
+              <li>Almost all the methods used in DTI prediction,
+              particularly similarity-based methods, heavily rely
+              on assertions concerning similar drugs and similar
+              targets, the type of database used for the prediction
+              plays a significant role.</li>
+              <li>Future predictions should rely on more
+              comprehensive inter- nal databases, which would
+              require a significant effort to map and curate data
+              across the sources that utilize different ways to
+              define, name and identify the drugs and targets.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org374ecea" class="outline-2">
+        <h2 id="org374ecea">
+        <span class="section-number-2">7</span>
+        <span class="todo STRT">STRT</span>Cao2016 - Improving
+        Tuberculosis Diagnostics Using Deep Learning and Mobile
+        Health Technologies among Resource-Poor and Marginalized
+        Communities</h2>
+        <div class="outline-text-2" id="text-7"></div>
+        <div id="outline-container-org484f5a3" class="outline-3">
+          <h3 id="org484f5a3">
+          <span class="section-number-3">7.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-7-1">
+            <ul class="org-ul">
+              <li>Image processing algorithms, CNN</li>
+              <li>They proposed an online database of X-ray images
+              - by now this might have been developed</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgda61369" class="outline-3">
+          <h3 id="orgda61369">
+          <span class="section-number-3">7.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-7-2">
+            <ul class="org-ul">
+              <li>Cao2016
+              <sub>ImprovingDiagnosticsUsingDL.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgc8fdfe9" class="outline-3">
+          <h3 id="orgc8fdfe9">
+          <span class="section-number-3">7.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-7-3">
+            <ul class="org-ul">
+              <li>The combination of machine learning and mobile
+              computing techniques offers a unique opportunity to
+              accelerate the TB diagnosis among these
+              communities</li>
+              <li>We first introduce major technique barriers and
+              proposed system architecture</li>
+              <li>The first activity aims to develop large-scale,
+              real-world and well-annotated X-ray image database
+              dedicated for automated TB screening.</li>
+              <li>The second research activity focus on developing
+              effective and efficient computational models (in
+              particularly, deep convolutional neural networks
+              (CNN)-based models) to classify the image into
+              different category of TB manifestations</li>
+              <li>Our future work includes: (1) to further improve
+              the performance of the algorithms; and (2) to deploy
+              our system in the city of Carabayllo in Perú, a
+              densely occupied urban community and high-burden
+              TB</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org938c130" class="outline-3">
+          <h3 id="org938c130">
+          <span class="section-number-3">7.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-7-4">
+            <ul class="org-ul">
+              <li>The first progress is to build a large-scale,
+              real-world, and well-annotated chest X- ray image
+              database dedicated for TB screening.</li>
+              <li>The second progress is to develop effective and
+              efficient computational model for TB manifestation
+              categorization.</li>
+              <li>We will continue to develop the large scale,
+              real-world X-ray TB database, as well as continuing
+              to improve the performance of the computing
+              algorithms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org065e28e" class="outline-2">
+        <h2 id="org065e28e">
+        <span class="section-number-2">8</span>
+        <span class="todo STRT">STRT</span>Chen2018 - Deep Learning
+        Predicts Tuberculosis Drug Resistance Status from
+        Whole-Genome Sequencing Data</h2>
+        <div class="outline-text-2" id="text-8"></div>
+        <div id="outline-container-org4300c46" class="outline-3">
+          <h3 id="org4300c46">
+          <span class="section-number-3">8.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-8-1">
+            <ul class="org-ul">
+              <li>A good in-depth ML based paper</li>
+              <li>They’ve shared high-level implementation details
+              briefly</li>
+              <li>Hyperparameters are also in the supplementary
+              material</li>
+              <li>I was able to find the code on Github 
+              <a href="https://github.com/biosharp-dotnet/wdnn">
+              https://github.com/biosharp-dotnet/wdnn</a></li>
+              <li>Could apply the same techniques to NTM</li>
+              <li>Could change the algorithm and apply on the same
+              data</li>
+              <li>The author built upon the previous paper by
+              improving the accuracy of the ML model - we could do
+              the same with NTM</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgf05b9c9" class="outline-3">
+          <h3 id="orgf05b9c9">
+          <span class="section-number-3">8.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-8-2">
+            <ul class="org-ul">
+              <li>Chen2018
+              <sub>DeepLearningPredictsTuberculosis.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org9478caf" class="outline-3">
+          <h3 id="org9478caf">
+          <span class="section-number-3">8.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-8-3">
+            <ul class="org-ul">
+              <li>Using targeted or whole genome sequencing and
+              conventional drug resistance phenotyping data from
+              3,601 Mycobacterium tuberculosis strains, 1,228 of
+              which were multidrug resistant, we implemented the
+              first multitask deep learning framework to predict
+              phenotypic drug resistance to 10 anti-tubercular
+              drugs</li>
+              <li>The proposed wide and deep neural network (WDNN)
+              achieved improved predictive performance compared to
+              regularized logistic regression and random
+              forest</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgc382094" class="outline-3">
+          <h3 id="orgc382094">
+          <span class="section-number-3">8.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-8-4">
+            <ul class="org-ul">
+              <li>We demonstrate that L2 regression and MD-WDNN
+              trained on a larger diverse dataset using a method of
+              aggregating rare variants outperforms our previously
+              reported random forest model. (Chen, 2018)</li>
+              <li>A few prior studies have utilized algorithmic or
+              machine learning methods using genomic data to
+              account for the complex relationship between genotype
+              and drug resistance in MTB</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org0791e91" class="outline-2">
+        <h2 id="org0791e91">
+        <span class="section-number-2">9</span>
+        <span class="todo STRT">STRT</span>Chen2019 - Beyond
+        multidrug resistance: Leveraging rare variants with machine
+        and statistical learning models in Mycobacterium
+        tuberculosis resistance prediction</h2>
+        <div class="outline-text-2" id="text-9"></div>
+        <div id="outline-container-orgef11dcb" class="outline-3">
+          <h3 id="orgef11dcb">
+          <span class="section-number-3">9.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-9-1">
+            <ul class="org-ul">
+              <li>A good in-depth ML based paper</li>
+              <li>Could apply the same techniques to NTM</li>
+              <li>Could change the algorithm and apply on the same
+              data</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org2f6b23b" class="outline-3">
+          <h3 id="org2f6b23b">
+          <span class="section-number-3">9.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-9-2">
+            <ul class="org-ul">
+              <li>Chen2019
+              <sub>BeyondMultiDrugResistance.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org54b0b5b" class="outline-3">
+          <h3 id="org54b0b5b">
+          <span class="section-number-3">9.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-9-3">
+            <ul class="org-ul">
+              <li>Whole genome sequencing of clinical Mycobacterium
+              tuberculosis isolates promises to circumvent the long
+              wait times and limited scope of conventional
+              phenotypic antimicrobial susceptibility, but gaps
+              remain for predicting phenotype accurately from
+              genotypic data especially for certain drugs.</li>
+              <li>We collected targeted or whole genome sequencing
+              and conventional drug resistance phenotyping data
+              from 3601 Mycobacterium tuberculosis strains enriched
+              for resistance to first- and second-line drugs, with
+              1228 multidrug resistant strains</li>
+              <li>We investigated the utility of (1) rare variants
+              and variants known to be determinants of resistance
+              for at least one drug and (2) machine and statistical
+              learning architectures in predicting phenotypic drug
+              resistance to 10 anti-tuberculosis drugs</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org145d641" class="outline-3">
+          <h3 id="org145d641">
+          <span class="section-number-3">9.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-9-4">
+            <ul class="org-ul">
+              <li>Our approach allowed us to gain new insights into
+              the relative im- portance of specific genetic
+              variants for resistance prediction</li>
+              <li>In summary, we present an exploration of machine
+              learning and traditional statistical models to
+              identify the resistance of MTB isolates to 10
+              anti-tuberculosis drugs from whole genome sequencing
+              data.</li>
+              <li>Our models trained on rare and common genetic
+              variants achieved state-of-the-art performance on a
+              large, aggregated TB dataset, with prediction times
+              of less than a tenth of a second, demonstrating the
+              efficacy of our model as a diagnostic tool for MTB
+              drug resistance.</li>
+              <li>The MD-WDNN represented the first multidrug model
+              to our knowledge that</li>
+            </ul>
+            <p>incorporated a high number of genotypic predictors
+            known to be important to determining resistance for one
+            or more included drugs</p>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-orgce4ae54" class="outline-2">
+        <h2 id="orgce4ae54">
+        <span class="section-number-2">10</span>
+        <span class="todo ___">[-]</span>Ching2018 - Opportunities
+        and obstacles for deep learning in biology and
+        medicine</h2>
+        <div class="outline-text-2" id="text-10"></div>
+        <div id="outline-container-orgf7bb134" class="outline-3">
+          <h3 id="orgf7bb134">
+          <span class="section-number-3">10.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-10-1">
+            <ul class="org-ul">
+              <li>Found the code 
+              <a href="https://github.com/greenelab/deep-review">
+              https://github.com/greenelab/deep-review</a></li>
+              <li>Can use this paper to build up the background for
+              using DL in MTB and NTM analysis</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org0aadbf7" class="outline-3">
+          <h3 id="org0aadbf7">
+          <span class="section-number-3">10.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-10-2">
+            <ul class="org-ul">
+              <li>Ching2018
+              <sub>
+              OpportunitiesAndObstaclesForDLInBiology.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orge7758d1" class="outline-3">
+          <h3 id="orge7758d1">
+          <span class="section-number-3">10.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-10-3">
+            <ul class="org-ul">
+              <li>Following from an extensive literature review, we
+              find that deep learning has yet to revolutionize
+              biomedicine or definitively resolve any of the most
+              pressing challenges in the field, but promising
+              advances have been made on the prior state of the
+              art</li>
+              <li>The limited amount of labelled data for training
+              presents problems in some domains, as do legal and
+              privacy constraints on work with sensitive health
+              records.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org77aeace" class="outline-3">
+          <h3 id="org77aeace">
+          <span class="section-number-3">10.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-10-4">
+            <ul class="org-ul">
+              <li>The most challenging tasks may be those in which
+              predictions are used directly for downstream model-
+              ling or decision-making, especially in the clinic. As
+              an example, errors in sequence variant calling will
+              be amplified if they are used directly for
+              genome-wide association studies.</li>
+              <li>In addition, the stochasticity and complexity of
+              biological sys- tems imply that for some problems,
+              for instance, predicting gene regulation in disease,
+              perfect accuracy will be unattainable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org21e6707" class="outline-2">
+        <h2 id="org21e6707">
+        <span class="section-number-2">11</span>
+        <span class="todo STRT">STRT</span>Deelder2019 - Machine
+        Learning Predicts Accurately Mycobacterium tuberculosis
+        Drug Resistance From Whole Genome Sequencing Data</h2>
+        <div class="outline-text-2" id="text-11"></div>
+        <div id="outline-container-orgeca9bb7" class="outline-3">
+          <h3 id="orgeca9bb7">
+          <span class="section-number-3">11.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-11-1">
+            <ul class="org-ul">
+              <li>Need to request code from authors</li>
+              <li>Good ML oriented paper</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org0703401" class="outline-3">
+          <h3 id="org0703401">
+          <span class="section-number-3">11.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-11-2">
+            <ul class="org-ul">
+              <li>Deelder2019
+              <sub>MLPredictsAccurately.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org980c4d1" class="outline-3">
+          <h3 id="org980c4d1">
+          <span class="section-number-3">11.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-11-3">
+            <ul class="org-ul">
+              <li>We applied machine learning approaches to 16,688
+              M. tuberculosis isolates that have undergone WGS and
+              laboratory drug-susceptibility testing (DST) across
+              14 antituberculosis drugs, with 22.5% of samples
+              being multidrug resistant and 2.1% being extensively
+              drug resistant.</li>
+              <li>We fitted separate models for each drug, with and
+              without “co-occurrent resistance” markers known to be
+              causing resistance to drugs other than the one of
+              interest. Predictive performance was measured using
+              sensitivity, specificity, and the area under the
+              receiver operating characteristic curve, assuming DST
+              results as the gold standard.</li>
+              <li>Overall, the gradient-boosted-tree models
+              performed better than the classification-tree
+              models.</li>
+              <li>Our work demonstrates the utility of machine
+              learning as a flexible approach to drug resistance
+              prediction that is able to accommodate a much larger
+              number of predictors and to summarize their
+              predictive ability, thus assisting clinical decision
+              making and single nucleotide polymorphism detection
+              in an era of increasing WGS data generation.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org5ca26e6" class="outline-3">
+          <h3 id="org5ca26e6">
+          <span class="section-number-3">11.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-11-4">
+            <ul class="org-ul">
+              <li>The predictive performance was highest for
+              resistance to first-line drugs, and
+              multidrug-resistant tuberculosis (area under the
+              receiver operating characteristic curve above 96%),
+              and lowest for third- line drugs (area under the
+              curve below 85%).</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgec07c11" class="outline-3">
+          <h3 id="orgec07c11">
+          <span class="section-number-3">
+          11.5</span>Supplementary</h3>
+          <div class="outline-text-3" id="text-11-5"></div>
+          <div id="outline-container-orga1ade99" class="outline-4">
+            <h4 id="orga1ade99">
+            <span class="section-number-4">11.5.1</span>Deelder2019
+            <sub>MLPredictsAccurately</sub>
+            <sub>Data</sub>
+            <sub>Sheet</sub>
+            <sub>1.pdf</sub></h4>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org1a01a39" class="outline-2">
+        <h2 id="org1a01a39">
+        <span class="section-number-2">12</span>
+        <span class="todo ___">[?]</span>Djout2016 - Predictive
+        modeling targets thymidylate synthase ThyX in Mycobacterium
+        tuberculosis</h2>
+        <div class="outline-text-2" id="text-12"></div>
+        <div id="outline-container-orga608f0d" class="outline-3">
+          <h3 id="orga608f0d">
+          <span class="section-number-3">12.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-12-1">
+            <ul class="org-ul">
+              <li>This requires more knowledge of chemistry and
+              perhaps also relies on lab based experiments</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgd1a22d4" class="outline-3">
+          <h3 id="orgd1a22d4">
+          <span class="section-number-3">12.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-12-2">
+            <ul class="org-ul">
+              <li>Djout2016
+              <sub>PredictiveModeling.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org2029d6b" class="outline-3">
+          <h3 id="org2029d6b">
+          <span class="section-number-3">12.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-12-3">
+            <ul class="org-ul">
+              <li>ThyX is an essential thymidylate synthase</li>
+            </ul>
+            <p>that is mechanistically and structurally unrelated
+            to the human enzyme. DNA gyrase is a DNA topoisomerase
+            present in bacteria and plants but not animals. The
+            current study set out to understand the
+            structure-activity relationships of these targets in
+            Mtb using a combination of cheminformatics and in vitro
+            screening.</p>
+          </div>
+        </div>
+        <div id="outline-container-orgf69d285" class="outline-3">
+          <h3 id="orgf69d285">
+          <span class="section-number-3">12.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org0abe5ab" class="outline-2">
+        <h2 id="org0abe5ab">
+        <span class="section-number-2">13</span>
+        <span class="todo STRT">STRT</span>Donohue2018 - Increasing
+        nontuberculous mycobacteria reporting rates and species
+        diversity identified in clinical laboratory reports</h2>
+        <div class="outline-text-2" id="text-13"></div>
+        <div id="outline-container-orgd4bbb39" class="outline-3">
+          <h3 id="orgd4bbb39">
+          <span class="section-number-3">13.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-13-1">
+            <ul class="org-ul">
+              <li>This is a survey report about NTM across a couple
+              decades</li>
+              <li>Could be used in building up the background
+              context</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgc17e54a" class="outline-3">
+          <h3 id="orgc17e54a">
+          <span class="section-number-3">13.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-13-2">
+            <ul class="org-ul">
+              <li>Donohue2018
+              <sub>IncreasingNTMReportingRates.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgef50bcb" class="outline-3">
+          <h3 id="orgef50bcb">
+          <span class="section-number-3">13.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-13-3">
+            <ul class="org-ul">
+              <li>Changes in NTM diversity were observed in
+              complex/groups known to be clinically significant.
+              Between 1994 and 2014 the rate implicating M.
+              abscesses-chelonae group and M. avium complex
+              increased by 322 and 149%, respectively.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org2a748e3" class="outline-3">
+          <h3 id="org2a748e3">
+          <span class="section-number-3">13.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-13-4">
+            <ul class="org-ul">
+              <li>Knowledge of the NTM species most frequently
+              associ- ated with adverse human health consequences
+              will assist epidemiological investigators to identify
+              likely sources and modes of exposure associated with
+              these types of in- fections.</li>
+              <li>As the U.S. population ages, the public health
+              burden from NTM associated disorders is expected to
+              increase.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-orgc3e0f89" class="outline-2">
+        <h2 id="orgc3e0f89">
+        <span class="section-number-2">14</span>
+        <span class="todo ___">[-]</span>Doshi2017 - Tuberculosis
+        control, and the where and why of artificial
+        intelligence</h2>
+        <div class="outline-text-2" id="text-14"></div>
+        <div id="outline-container-orgfa5ac26" class="outline-3">
+          <h3 id="orgfa5ac26">
+          <span class="section-number-3">14.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-14-1">
+            <ul class="org-ul">
+              <li>Survey paper</li>
+              <li>Can be used for building background context</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org64eac41" class="outline-3">
+          <h3 id="org64eac41">
+          <span class="section-number-3">14.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-14-2">
+            <ul class="org-ul">
+              <li>Doshi2017
+              <sub>TuberculosisControl.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org5628344" class="outline-3">
+          <h3 id="org5628344">
+          <span class="section-number-3">14.3</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org6d40230" class="outline-3">
+          <h3 id="org6d40230">
+          <span class="section-number-3">14.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgbe21b1a" class="outline-2">
+        <h2 id="orgbe21b1a">
+        <span class="section-number-2">15</span>
+        <span class="done _X_">[X]</span>Ekins2013 - Enhancing Hit
+        Identification in Mycobacterium tuberculosis Drug Discovery
+        Using Validated Dual-Event Bayesian Models</h2>
+        <div class="outline-text-2" id="text-15"></div>
+        <div id="outline-container-orgabdc549" class="outline-3">
+          <h3 id="orgabdc549">
+          <span class="section-number-3">15.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-15-1">
+            <ul class="org-ul">
+              <li>Requires too much domain knowledge</li>
+              <li>Perhaps uses an older technique i.e. HTS for
+              analysis</li>
+              <li>Could use other algorithms on the data used in
+              this study</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org65dd718" class="outline-3">
+          <h3 id="org65dd718">
+          <span class="section-number-3">15.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-15-2">
+            <ul class="org-ul">
+              <li>Ekins2013
+              <sub>EnhancingHitIdentification.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org836d842" class="outline-3">
+          <h3 id="org836d842">
+          <span class="section-number-3">15.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-15-3">
+            <ul class="org-ul">
+              <li>High-throughput screening (HTS) in whole cells is
+              widely pursued to find compounds active against
+              Mycobacterium tuberculosis (Mtb) for further
+              development towards new tuberculosis (TB) drugs</li>
+              <li>We have recently built and validated Bayesian
+              machine learning models for predicting compounds with
+              activity against Mtb based on publicly available
+              large-scale HTS data from the Tuberculosis
+              Antimicrobial Acquisition Coordinating Facility</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgf889eb7" class="outline-3">
+          <h3 id="orgf889eb7">
+          <span class="section-number-3">15.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org44a2ba8" class="outline-2">
+        <h2 id="org44a2ba8">
+        <span class="section-number-2">16</span>
+        <span class="done _X_">[X]</span>Ekins2013 - Fusing
+        Dual-Event Data Sets for Mycobacterium tuberculosis Machine
+        Learning Models and Their Evaluation</h2>
+        <div class="outline-text-2" id="text-16"></div>
+        <div id="outline-container-orgb95c596" class="outline-3">
+          <h3 id="orgb95c596">
+          <span class="section-number-3">16.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-16-1">
+            <ul class="org-ul">
+              <li>Requires too much domain knowledge</li>
+              <li>Perhaps uses an older technique i.e. HTS for
+              analysis</li>
+              <li>Could use other algorithms on the data used in
+              this study</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgb53aef7" class="outline-3">
+          <h3 id="orgb53aef7">
+          <span class="section-number-3">16.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-16-2">
+            <ul class="org-ul">
+              <li>Ekins2013
+              <sub>FusingDualEvent.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org88fd7d9" class="outline-3">
+          <h3 id="org88fd7d9">
+          <span class="section-number-3">16.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-16-3">
+            <ul class="org-ul">
+              <li>A cheminformatics data-fusion</li>
+            </ul>
+            <p>approach followed by Bayesian machine learning,
+            Support Vector Machine, or Recursive Partitioning model
+            development (based on publicly available Mtb screening
+            data) was used to compare individual data sets and
+            subsequent combined models.</p>
+            <ul class="org-ul">
+              <li>We demonstrate that</li>
+            </ul>
+            <p>combining three data sets incorporating
+            antitubercular and cytotoxicity data in Vero cells from
+            our previous screens results in external validation
+            receiver operator curve (ROC) of 0.83 (Bayesian or RP
+            Forest)</p>
+          </div>
+        </div>
+        <div id="outline-container-org2cd7d23" class="outline-3">
+          <h3 id="org2cd7d23">
+          <span class="section-number-3">16.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org800010b" class="outline-2">
+        <h2 id="org800010b">
+        <span class="section-number-2">17</span>
+        <span class="done _X_">[X]</span>Ekins2014
+        <sub>AreBiggerDataSets.pdf</sub></h2>
+        <div class="outline-text-2" id="text-17"></div>
+        <div id="outline-container-org6ceb20b" class="outline-3">
+          <h3 id="org6ceb20b">
+          <span class="section-number-3">17.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-17-1">
+            <ul class="org-ul">
+              <li>Requires too much domain knowledge</li>
+              <li>Perhaps uses an older technique i.e. HTS for
+              analysis</li>
+              <li>Could use other algorithms on the data used in
+              this study</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org90529a5" class="outline-3">
+          <h3 id="org90529a5">
+          <span class="section-number-3">17.2</span>Title</h3>
+        </div>
+        <div id="outline-container-org231953f" class="outline-3">
+          <h3 id="org231953f">
+          <span class="section-number-3">17.3</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgf4ce832" class="outline-3">
+          <h3 id="orgf4ce832">
+          <span class="section-number-3">17.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgd6ed5e3" class="outline-2">
+        <h2 id="orgd6ed5e3">
+        <span class="section-number-2">18</span>
+        <span class="done _X_">[X]</span>Ekins2014
+        <sub>CombiningComputationalMethods.pdf</sub></h2>
+        <div class="outline-text-2" id="text-18"></div>
+        <div id="outline-container-orge84f65e" class="outline-3">
+          <h3 id="orge84f65e">
+          <span class="section-number-3">18.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-18-1">
+            <ul class="org-ul">
+              <li>Requires too much domain knowledge</li>
+              <li>Perhaps uses an older technique i.e. HTS for
+              analysis</li>
+              <li>Could use other algorithms on the data used in
+              this study</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgd50722c" class="outline-3">
+          <h3 id="orgd50722c">
+          <span class="section-number-3">18.2</span>Title</h3>
+        </div>
+        <div id="outline-container-org002ec22" class="outline-3">
+          <h3 id="org002ec22">
+          <span class="section-number-3">18.3</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org932a3bc" class="outline-3">
+          <h3 id="org932a3bc">
+          <span class="section-number-3">18.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org00fce43" class="outline-2">
+        <h2 id="org00fce43">
+        <span class="section-number-2">19</span>
+        <span class="done _X_">[X]</span>Ekins2016
+        <sub>MachineLearningModel.pdf</sub></h2>
+        <div class="outline-text-2" id="text-19"></div>
+        <div id="outline-container-org9f26349" class="outline-3">
+          <h3 id="org9f26349">
+          <span class="section-number-3">19.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-19-1">
+            <ul class="org-ul">
+              <li>Requires too much domain knowledge</li>
+              <li>Perhaps uses an older technique i.e. HTS for
+              analysis</li>
+              <li>Could use other algorithms on the data used in
+              this study</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org3b724b3" class="outline-3">
+          <h3 id="org3b724b3">
+          <span class="section-number-3">19.2</span>Title</h3>
+        </div>
+        <div id="outline-container-orge353ac8" class="outline-3">
+          <h3 id="orge353ac8">
+          <span class="section-number-3">19.3</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org500306c" class="outline-3">
+          <h3 id="org500306c">
+          <span class="section-number-3">19.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgd66cb49" class="outline-2">
+        <h2 id="orgd66cb49">
+        <span class="section-number-2">20</span>
+        <span class="done _X_">[X]</span>Ekins2017
+        <sub>MachineLearning.pdf</sub></h2>
+        <div class="outline-text-2" id="text-20"></div>
+        <div id="outline-container-org4bc192e" class="outline-3">
+          <h3 id="org4bc192e">
+          <span class="section-number-3">20.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-20-1">
+            <ul class="org-ul">
+              <li>Requires too much domain knowledge</li>
+              <li>Perhaps uses an older technique i.e. HTS for
+              analysis</li>
+              <li>Could use other algorithms on the data used in
+              this study</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orge31e3b1" class="outline-3">
+          <h3 id="orge31e3b1">
+          <span class="section-number-3">20.2</span>Title</h3>
+        </div>
+        <div id="outline-container-org1dbba15" class="outline-3">
+          <h3 id="org1dbba15">
+          <span class="section-number-3">20.3</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org309fda3" class="outline-3">
+          <h3 id="org309fda3">
+          <span class="section-number-3">20.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org0078119" class="outline-2">
+        <h2 id="org0078119">
+        <span class="section-number-2">21</span>
+        <span class="todo ___">[-]</span>Engle2019 - Performance of
+        Qure.ai automatic classifiers against a large annotated
+        database of patients with diverse forms of
+        tuberculosis</h2>
+        <div class="outline-text-2" id="text-21"></div>
+        <div id="outline-container-orgab84f7f" class="outline-3">
+          <h3 id="orgab84f7f">
+          <span class="section-number-3">21.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-21-1">
+            <ul class="org-ul">
+              <li>Image processing</li>
+              <li>Mentiones the database source, NIH</li>
+              <li>Has CSV as supplementary data</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org484e9da" class="outline-3">
+          <h3 id="org484e9da">
+          <span class="section-number-3">21.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-21-2">
+            <ul class="org-ul">
+              <li>Engle2019
+              <sub>PerformanceOfQureAI.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org2c72a04" class="outline-3">
+          <h3 id="org2c72a04">
+          <span class="section-number-3">21.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-21-3">
+            <ul class="org-ul">
+              <li>Availability of trained radiologists for fast
+              processing of CXRs in regions burdened with
+              tuberculosis always has been a challenge, affecting
+              both timely diagnosis and patient monitoring.</li>
+              <li>The Qure.ai qXR arti- ficial intelligence
+              automated CXR interpretation tool, was blind-tested
+              on the 346 radiologist- annotated CXRs from the TBPP
+              database.</li>
+              <li>We conclude that applying fully automated Qure.ai
+              CXR analysis tool is useful for fast, accurate,
+              uniform, large-scale CXR annotation assistance, as it
+              performed well even for DR-TB cases that were not
+              used for initial training.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org7258d32" class="outline-3">
+          <h3 id="org7258d32">
+          <span class="section-number-3">21.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-21-4">
+            <ul class="org-ul">
+              <li>We demonstrated that the Qure.ai qXR CXR
+              annotations for cavity, nodule, pleural effusion, and
+              hilar lymphadenopathy, are in statistical agreement
+              with radiologist CXR annotations.</li>
+              <li>A corresponding analysis of patient case matched
+              CT image annotations recorded within 30 days of a CXR
+              supports this result, demonstrating statistical
+              significance for cavity, pleural effusion, hilar
+              lymphadenopathy, and atelectasis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org5b53a99" class="outline-2">
+        <h2 id="org5b53a99">
+        <span class="section-number-2">22</span>
+        <span class="todo ___">[-]</span>Greif2020 - Species
+        Distribution and Isolation Frequency of Nontuberculous
+        Mycobacteria, Uruguay</h2>
+        <div class="outline-text-2" id="text-22"></div>
+        <div id="outline-container-org946d072" class="outline-3">
+          <h3 id="org946d072">
+          <span class="section-number-3">22.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-22-1">
+            <ul class="org-ul">
+              <li>Survey paper</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgf12322f" class="outline-3">
+          <h3 id="orgf12322f">
+          <span class="section-number-3">22.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-22-2">
+            <ul class="org-ul">
+              <li>Greif2020
+              <sub>FrequencyOfNTM.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orga30ec7d" class="outline-3">
+          <h3 id="orga30ec7d">
+          <span class="section-number-3">22.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-22-3">
+            <ul class="org-ul">
+              <li>Nontuberculous mycobacteria (NTM) increasingly
+              are recognized as opportunistic pathogens of
+              humans.</li>
+              <li>NTM species distribution is well documented in
+              Europe and North America</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org131a5e7" class="outline-3">
+          <h3 id="org131a5e7">
+          <span class="section-number-3">22.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-22-4">
+            <ul class="org-ul">
+              <li>Our findings indicate that rate of NTM have risen
+              nearly 5-fold (4.79) in Uruguay, from 0.33 cas-
+              es/100,000 inhabitants in 2006 to 1.57 cases/100,000
+              inhabitants in 2018.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org24986d1" class="outline-2">
+        <h2 id="org24986d1">
+        <span class="section-number-2">23</span>
+        <span class="todo ___">[-]</span>Hicks2019 - Evaluation of
+        parameters affecting performance and reliability of machine
+        learning-based antibiotic susceptibility testing from whole
+        genome sequencing data</h2>
+        <div class="outline-text-2" id="text-23"></div>
+        <div id="outline-container-org46e1335" class="outline-3">
+          <h3 id="org46e1335">
+          <span class="section-number-3">23.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-23-1">
+            <ul class="org-ul">
+              <li>Can perform the mentioned analysis on the MTB and
+              NTM data</li>
+              <li>The paper focuses on the factors affecting the
+              application and clinical application of ML
+              models</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgfe7ae6a" class="outline-3">
+          <h3 id="orgfe7ae6a">
+          <span class="section-number-3">23.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-23-2">
+            <ul class="org-ul">
+              <li>Hicks2019
+              <sub>EvaluationOfParameters.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org248201b" class="outline-3">
+          <h3 id="org248201b">
+          <span class="section-number-3">23.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-23-3">
+            <ul class="org-ul">
+              <li>There has been no systematic evaluation of
+              factors that may influence performance of ML models,
+              how they might apply to and vary across clinical
+              populations, and what the implications might be in
+              the clinical setting</li>
+              <li>We performed a meta-analysis of seven large
+              Neisseria gonorrhoeae datasets, as well as Klebsiella
+              pneumoniae and Acinetobacter baumannii datasets, with
+              whole genome sequence data and antibiotic
+              susceptibility phenotypes using set covering machine
+              classifi- cation, random forest classification, and
+              random forest regression models to predict resis-
+              tance phenotypes from genotype.</li>
+              <li>We demonstrate how model performance varies by
+              drug, dataset, resistance metric, and species,
+              reflecting the complexities of generating clinically
+              relevant conclusions from machine learning-derived
+              models.</li>
+              <li>Our results highlight significant biological and
+              technical challenges facing the application of
+              machine learning-based prediction of antibiotic
+              resistance as a diagnostic tool.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orge9dcb00" class="outline-3">
+          <h3 id="orge9dcb00">
+          <span class="section-number-3">23.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org9b1f743" class="outline-2">
+        <h2 id="org9b1f743">
+        <span class="section-number-2">24</span>
+        <span class="todo STRT">STRT</span>Hussain2018 - Predicting
+        treatment outcome of drug-susceptible tuberculosis patients
+        using machine-learning models</h2>
+        <div class="outline-text-2" id="text-24"></div>
+        <div id="outline-container-org4491af5" class="outline-3">
+          <h3 id="org4491af5">
+          <span class="section-number-3">24.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-24-1">
+            <ul class="org-ul">
+              <li>Can use a different algorithm (XgBoost) on the
+              dataset</li>
+              <li>Sample data and complete code is shared 
+              <a href="https://github.com/biosharp-dotnet/tuberculosis-predictive-analytics">
+              https://github.com/biosharp-dotnet/tuberculosis-predictive-analytics</a></li>
+              <li>Need to find the full dataset of 4000 surveyed
+              patients</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org544fba1" class="outline-3">
+          <h3 id="org544fba1">
+          <span class="section-number-3">24.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-24-2">
+            <ul class="org-ul">
+              <li>Hussain2018
+              <sub>PredictingTreatmentOutcomes.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orga78425e" class="outline-3">
+          <h3 id="orga78425e">
+          <span class="section-number-3">24.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-24-3">
+            <ul class="org-ul">
+              <li>Tuberculosis (TB) is a deadly contagious disease
+              and a serious global health problem. It is curable
+              but due to its lengthy treatment process, a patient
+              is likely to leave the treatment incomplete, leading
+              to a more lethal, drug resistant form of
+              disease.</li>
+              <li>We aim to facilitate TB programs by predicting
+              the outcome of the treatment of a particular patient
+              at the start of treatment so that their health
+              workers can be utilized in a targeted and
+              cost-effective way.</li>
+              <li>The problem was modeled as a classification
+              problem, and the outcome of treatment was predicted
+              using state-of-art implementations of 3 machine
+              learning algorithms</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgdc3e7e2" class="outline-3">
+          <h3 id="orgdc3e7e2">
+          <span class="section-number-3">24.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-24-4">
+            <ul class="org-ul">
+              <li>Empirical results using data of more than 4000
+              patients reveal that we can predict with more than
+              76% accuracy whether a TB patient would complete his
+              (or her) treatment or not</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org5d2948b" class="outline-2">
+        <h2 id="org5d2948b">
+        <span class="section-number-2">25</span>
+        <span class="todo STRT">STRT</span>Jamal2020 - Artificial
+        Intelligence and Machine learning based prediction of
+        resistant and susceptible mutations in Mycobacterium
+        tuberculosis</h2>
+        <div class="outline-text-2" id="text-25"></div>
+        <div id="outline-container-org8c582d2" class="outline-3">
+          <h3 id="org8c582d2">
+          <span class="section-number-3">25.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-25-1">
+            <ul class="org-ul">
+              <li>Used many ML algorithms, 85% accuracy</li>
+              <li>Could use XgBoost</li>
+              <li>Could conduct a similar study for NTM</li>
+              <li>Mentions many online bio databases</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org557c4c5" class="outline-3">
+          <h3 id="org557c4c5">
+          <span class="section-number-3">25.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-25-2">
+            <ul class="org-ul">
+              <li>Jamal2020
+              <sub>AIAndMLBasedPredictive.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgfae7288" class="outline-3">
+          <h3 id="orgfae7288">
+          <span class="section-number-3">25.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-25-3">
+            <ul class="org-ul">
+              <li>The present work is a computational framework
+              that uses artificial intelligence (AI) based machine
+              learning (ML) approaches for predicting resistance in
+              the genes rpoB, inhA, katG, pncA, gyrA and gyrB for
+              the drugs rifampicin, isoniazid, pyrazinamide and
+              fluoroquinolones</li>
+              <li>The single nucleotide variations were represented
+              by several sequence and structural features that
+              indicate the influence of mutations on the target
+              protein coded by each gene.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org8d4d7f5" class="outline-3">
+          <h3 id="org8d4d7f5">
+          <span class="section-number-3">25.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-25-4">
+            <ul class="org-ul">
+              <li>The present study proposes an AI/ML method to
+              classify resistant and susceptible mutations in TB
+              and predict novel resistance conferring
+              mutations.</li>
+              <li>The impact of the reported mutations was captured
+              in the form of changes in the amino acid residues,
+              and the consequent change in properties vis-a-vis
+              wild-type and mutant proteins and represented as
+              features used to train the models.</li>
+              <li>The classification model was generated for each
+              gene and predictions were made for SNVs linked with
+              each gene for each drug</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-orgc6e221f" class="outline-2">
+        <h2 id="orgc6e221f">
+        <span class="section-number-2">26</span>
+        <span class="todo STRT">STRT</span>Kavvas2018 - Machine
+        learning and structural analysis of Mycobacterium
+        tuberculosis pan-genome identifies genetic signatures of
+        antibiotic resistance</h2>
+        <div class="outline-text-2" id="text-26"></div>
+        <div id="outline-container-org94bb80f" class="outline-3">
+          <h3 id="org94bb80f">
+          <span class="section-number-3">26.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-26-1">
+            <ul class="org-ul">
+              <li>They developed and online platform</li>
+              <li>Can be applied to NTM</li>
+              <li>Code is available 
+              <a href="https://github.com/biosharp-dotnet/microbial_AMR_ML">
+              https://github.com/biosharp-dotnet/microbial_AMR_ML</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgd518b86" class="outline-3">
+          <h3 id="orgd518b86">
+          <span class="section-number-3">26.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-26-2">
+            <ul class="org-ul">
+              <li>Kavvas2018
+              <sub>MachineLearning</sub>
+              <sub>.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org935f5c2" class="outline-3">
+          <h3 id="org935f5c2">
+          <span class="section-number-3">26.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-26-3">
+            <ul class="org-ul">
+              <li>The many publicly available datasets describing
+              its AMR characteristics demand disparate data-type
+              analyses.</li>
+              <li>Here, we develop a reference strain-agnostic
+              computational platform that uses machine learning
+              approaches, complemented by both genetic interaction
+              analysis and 3D structural mutation-mapping, to
+              identify signatures of AMR evolution to 13
+              antibiotics.</li>
+              <li>First, a pan-genome analysis shows that M.
+              tuberculosis is highly conserved with sequenced
+              variation concentrated in PE/PPE/PGRS genes.</li>
+              <li>Second, the platform corroborates 33 genes known
+              to confer resistance and identifies 24 new genetic
+              signatures of AMR.</li>
+              <li>Third, 97 epistatic interactions across 10
+              resistance classes are revealed.</li>
+              <li>Fourth, detailed structural analysis of these
+              genes yields mechanistic bases for their
+              selection.</li>
+              <li>The platform can be used to study other human
+              pathogens</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orga5f5271" class="outline-3">
+          <h3 id="orga5f5271">
+          <span class="section-number-3">26.4</span>Conclusion</h3>
+          <div class="outline-text-3" id="text-26-4">
+            <ul class="org-ul">
+              <li>The platform was applied to 1595 sequenced
+              strains to yield results in four categories:
+              pan-genome properties, identification of genes
+              conferring antibiotic resistance, their epistatic
+              interactions, and protein structure based mechanistic
+              insights.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org618a08f" class="outline-2">
+        <h2 id="org618a08f">
+        <span class="section-number-2">27</span>Khanna2018 -
+        Ensemble Technique for Prediction of T-cell Mycobacterium
+        tuberculosis Epitopes</h2>
+        <div class="outline-text-2" id="text-27"></div>
+        <div id="outline-container-org96ce888" class="outline-3">
+          <h3 id="org96ce888">
+          <span class="section-number-3">27.1</span>Notes</h3>
+          <div class="outline-text-3" id="text-27-1">
+            <ul class="org-ul">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-org73dfa63" class="outline-3">
+          <h3 id="org73dfa63">
+          <span class="section-number-3">27.2</span>FileName</h3>
+          <div class="outline-text-3" id="text-27-2">
+            <ul class="org-ul">
+              <li>Khanna2018
+              <sub>EnsembleTechnique.pdf</sub></li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-orgacba86e" class="outline-3">
+          <h3 id="orgacba86e">
+          <span class="section-number-3">27.3</span>Abstract</h3>
+          <div class="outline-text-3" id="text-27-3">
+            <ul class="org-ul">
+              <li>Development of an effective machine-learning
+              model for T-cell Mycobacterium tuberculosis (M.
+              tuberculosis) epitopes is beneficial for saving
+              biologist’s time and effort for identifying epitope
+              in a targeted antigen.</li>
+              <li>The proposed method is able to work with variable
+              length epitopes having size</li>
+            </ul>
+            <p>even greater than 9-mers. Identification of T-cell
+            or B-cell epitopes in the targeted antigen is the main
+            goal in designing epitope-based vaccine,
+            immune-diagnostic tests and antibody production</p>
+          </div>
+        </div>
+        <div id="outline-container-org41130d7" class="outline-3">
+          <h3 id="org41130d7">
+          <span class="section-number-3">27.4</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org9712d79" class="outline-2">
+        <h2 id="org9712d79">
+        <span class="section-number-2">28</span>Killian2019
+        <sub>LearningToPrescribe.pdf</sub></h2>
+        <div class="outline-text-2" id="text-28"></div>
+        <div id="outline-container-org45c508f" class="outline-3">
+          <h3 id="org45c508f">
+          <span class="section-number-3">28.1</span>Title</h3>
+        </div>
+        <div id="outline-container-orga127682" class="outline-3">
+          <h3 id="orga127682">
+          <span class="section-number-3">28.2</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org8f55705" class="outline-3">
+          <h3 id="org8f55705">
+          <span class="section-number-3">28.3</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org0e1e46a" class="outline-2">
+        <h2 id="org0e1e46a">
+        <span class="section-number-2">29</span>Kouchaki2019
+        <sub>ApplicationOfML.pdf</sub></h2>
+        <div class="outline-text-2" id="text-29"></div>
+        <div id="outline-container-org9cdba12" class="outline-3">
+          <h3 id="org9cdba12">
+          <span class="section-number-3">29.1</span>Title</h3>
+        </div>
+        <div id="outline-container-orgeff3c95" class="outline-3">
+          <h3 id="orgeff3c95">
+          <span class="section-number-3">29.2</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org6b837a8" class="outline-3">
+          <h3 id="org6b837a8">
+          <span class="section-number-3">29.3</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org3c332b7" class="outline-2">
+        <h2 id="org3c332b7">
+        <span class="section-number-2">30</span>Kouchaki2020
+        <sub>MultiLabelRandomForest.pdf</sub></h2>
+        <div class="outline-text-2" id="text-30"></div>
+        <div id="outline-container-org6821f88" class="outline-3">
+          <h3 id="org6821f88">
+          <span class="section-number-3">30.1</span>Title</h3>
+        </div>
+        <div id="outline-container-org78ae72d" class="outline-3">
+          <h3 id="org78ae72d">
+          <span class="section-number-3">30.2</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgf90c729" class="outline-3">
+          <h3 id="orgf90c729">
+          <span class="section-number-3">30.3</span>Conclusion</h3>
+        </div>
+        <div id="outline-container-org1266f7c" class="outline-3">
+          <h3 id="org1266f7c">
+          <span class="section-number-3">
+          30.4</span>Supplementary</h3>
+          <div class="outline-text-3" id="text-30-4"></div>
+          <div id="outline-container-org1a173d6" class="outline-4">
+            <h4 id="org1a173d6">
+            <span class="section-number-4">
+            30.4.1</span>Kouchaki2020
+            <sub>MultiLabel.zip</sub></h4>
+          </div>
+          <div id="outline-container-org0b40ceb" class="outline-4">
+            <h4 id="org0b40ceb">
+            <span class="section-number-4">
+            30.4.2</span>Kouchaki2020
+            <sub>MultiLabel</sub>
+            <sub>DataSheet</sub>
+            <sub>1.pdf</sub></h4>
+          </div>
+          <div id="outline-container-orgb92fcf0" class="outline-4">
+            <h4 id="orgb92fcf0">
+            <span class="section-number-4">
+            30.4.3</span>Kouchaki2020
+            <sub>MultiLabel</sub>
+            <sub>DataSheet</sub>
+            <sub>2.pdf</sub></h4>
+          </div>
+          <div id="outline-container-org9312224" class="outline-4">
+            <h4 id="org9312224">
+            <span class="section-number-4">30.4.4</span>Code</h4>
+            <div class="outline-text-4" id="text-30-4-4">
+              <p>Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/checkmutations.py
+              Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/common
+              <sub>functions.py</sub>Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/cvcodes.py Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/demo-mtbmlrf.py
+              Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/ensemble
+              <sub>learning</sub>
+              <sub>multilabel.py</sub>Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/fakefeat.csv Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/fakepheno.csv Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/feature
+              <sub>extraction.py</sub>Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/load-dataset.py
+              Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/mutation
+              <sub>ranking.py</sub>Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/print
+              <sub>stats.py</sub>Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/readme Kouchaki2020
+              <sub>MultiLabelSLRF</sub>/treeplot.py</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org6eee474" class="outline-2">
+        <h2 id="org6eee474">
+        <span class="section-number-2">31</span>Kovalishyn2019
+        <sub>HybridDesign.pdf</sub></h2>
+        <div class="outline-text-2" id="text-31"></div>
+        <div id="outline-container-orgd9e8be0" class="outline-3">
+          <h3 id="orgd9e8be0">
+          <span class="section-number-3">31.1</span>Title</h3>
+        </div>
+        <div id="outline-container-orgaa99050" class="outline-3">
+          <h3 id="orgaa99050">
+          <span class="section-number-3">31.2</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgf294b66" class="outline-3">
+          <h3 id="orgf294b66">
+          <span class="section-number-3">31.3</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org9049d28" class="outline-2">
+        <h2 id="org9049d28">
+        <span class="section-number-2">32</span>Kumari2019
+        <sub>AGeneticProgramming.pdf</sub></h2>
+        <div class="outline-text-2" id="text-32"></div>
+        <div id="outline-container-orgf79ac7b" class="outline-3">
+          <h3 id="orgf79ac7b">
+          <span class="section-number-3">32.1</span>Title</h3>
+        </div>
+        <div id="outline-container-org1783ad1" class="outline-3">
+          <h3 id="org1783ad1">
+          <span class="section-number-3">32.2</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org7bf7f05" class="outline-3">
+          <h3 id="org7bf7f05">
+          <span class="section-number-3">32.3</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org93f66ca" class="outline-2">
+        <h2 id="org93f66ca">
+        <span class="section-number-2">33</span>Lai2019
+        <sub>ComparisonOfThePredictiveOutcomes.pdf</sub></h2>
+        <div class="outline-text-2" id="text-33"></div>
+        <div id="outline-container-orga461ee9" class="outline-3">
+          <h3 id="orga461ee9">
+          <span class="section-number-3">33.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org90864bc" class="outline-3">
+          <h3 id="org90864bc">
+          <span class="section-number-3">33.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgc46dc90" class="outline-2">
+        <h2 id="orgc46dc90">
+        <span class="section-number-2">34</span>Lane2018
+        <sub>ComparingAndValidating.pdf</sub></h2>
+        <div class="outline-text-2" id="text-34"></div>
+        <div id="outline-container-org3c56ed6" class="outline-3">
+          <h3 id="org3c56ed6">
+          <span class="section-number-3">34.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orga71b7a5" class="outline-3">
+          <h3 id="orga71b7a5">
+          <span class="section-number-3">34.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgf59bd97" class="outline-2">
+        <h2 id="orgf59bd97">
+        <span class="section-number-2">35</span>Lin2001
+        <sub>ConservedCodonComposition.pdf</sub></h2>
+        <div class="outline-text-2" id="text-35"></div>
+        <div id="outline-container-orgdfdda06" class="outline-3">
+          <h3 id="orgdfdda06">
+          <span class="section-number-3">35.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org22d9249" class="outline-3">
+          <h3 id="org22d9249">
+          <span class="section-number-3">35.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgeb1176f" class="outline-2">
+        <h2 id="orgeb1176f">
+        <span class="section-number-2">36</span>LokeshKumar2019
+        <sub>PredictionOfMultiDrugResistant.pdf</sub></h2>
+        <div class="outline-text-2" id="text-36"></div>
+        <div id="outline-container-orgf41cf33" class="outline-3">
+          <h3 id="orgf41cf33">
+          <span class="section-number-3">36.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org3a4bccb" class="outline-3">
+          <h3 id="org3a4bccb">
+          <span class="section-number-3">36.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgae17850" class="outline-2">
+        <h2 id="orgae17850">
+        <span class="section-number-2">37</span>Mahe2019
+        <sub>ALargeScaleEvaluationTBProfiler.pdf</sub></h2>
+        <div class="outline-text-2" id="text-37"></div>
+        <div id="outline-container-org15d6473" class="outline-3">
+          <h3 id="org15d6473">
+          <span class="section-number-3">37.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org56c6fbd" class="outline-3">
+          <h3 id="org56c6fbd">
+          <span class="section-number-3">37.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org3cc37f1" class="outline-2">
+        <h2 id="org3cc37f1">
+        <span class="section-number-2">38</span>Marino2016
+        <sub>ComputationalAndEmpirical.pdf</sub></h2>
+        <div class="outline-text-2" id="text-38"></div>
+        <div id="outline-container-org9176bfb" class="outline-3">
+          <h3 id="org9176bfb">
+          <span class="section-number-3">38.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org724ebed" class="outline-3">
+          <h3 id="org724ebed">
+          <span class="section-number-3">38.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgafa4882" class="outline-2">
+        <h2 id="orgafa4882">
+        <span class="section-number-2">39</span>Marques2019
+        <sub>PulmonaryNTMInfections.pdf</sub></h2>
+        <div class="outline-text-2" id="text-39"></div>
+        <div id="outline-container-orgaba0d78" class="outline-3">
+          <h3 id="orgaba0d78">
+          <span class="section-number-3">39.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgec8e403" class="outline-3">
+          <h3 id="orgec8e403">
+          <span class="section-number-3">39.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org6de5c9e" class="outline-2">
+        <h2 id="org6de5c9e">
+        <span class="section-number-2">40</span>Meldenez2015
+        <sub>OnCombiningMultiple.pdf</sub></h2>
+        <div class="outline-text-2" id="text-40"></div>
+        <div id="outline-container-orgf82697a" class="outline-3">
+          <h3 id="orgf82697a">
+          <span class="section-number-3">40.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgc7292b3" class="outline-3">
+          <h3 id="orgc7292b3">
+          <span class="section-number-3">40.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org3725a8b" class="outline-2">
+        <h2 id="org3725a8b">
+        <span class="section-number-2">41</span>Mikusova2016
+        <sub>LearningFromThePast.pdf</sub></h2>
+        <div class="outline-text-2" id="text-41"></div>
+        <div id="outline-container-orgb773bbd" class="outline-3">
+          <h3 id="orgb773bbd">
+          <span class="section-number-3">41.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgf58656c" class="outline-3">
+          <h3 id="orgf58656c">
+          <span class="section-number-3">41.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orge0dce1d" class="outline-2">
+        <h2 id="orge0dce1d">
+        <span class="section-number-2">42</span>Ngo2019
+        <sub>GenomicPrediction.pdf</sub></h2>
+        <div class="outline-text-2" id="text-42"></div>
+        <div id="outline-container-orgda7f557" class="outline-3">
+          <h3 id="orgda7f557">
+          <span class="section-number-3">42.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgb56db1b" class="outline-3">
+          <h3 id="orgb56db1b">
+          <span class="section-number-3">42.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org9f1cd6d" class="outline-2">
+        <h2 id="org9f1cd6d">
+        <span class="section-number-2">43</span>Periwal2011
+        <sub>PredictiveModels.pdf</sub></h2>
+        <div class="outline-text-2" id="text-43"></div>
+        <div id="outline-container-org4c1e305" class="outline-3">
+          <h3 id="org4c1e305">
+          <span class="section-number-3">43.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org95bbc32" class="outline-3">
+          <h3 id="org95bbc32">
+          <span class="section-number-3">43.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org6fe6f5b" class="outline-2">
+        <h2 id="org6fe6f5b">
+        <span class="section-number-2">44</span>Ratnatunga2020
+        <sub>RiseOfNTMLungDisease.pdf</sub></h2>
+        <div class="outline-text-2" id="text-44"></div>
+        <div id="outline-container-org9e07094" class="outline-3">
+          <h3 id="org9e07094">
+          <span class="section-number-3">44.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgd3a586e" class="outline-3">
+          <h3 id="orgd3a586e">
+          <span class="section-number-3">44.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgbc4595f" class="outline-2">
+        <h2 id="orgbc4595f">
+        <span class="section-number-2">45</span>Romero2020
+        <sub>DecisionTree.pdf</sub></h2>
+        <div class="outline-text-2" id="text-45"></div>
+        <div id="outline-container-org5fd4c0e" class="outline-3">
+          <h3 id="org5fd4c0e">
+          <span class="section-number-3">45.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgc331528" class="outline-3">
+          <h3 id="orgc331528">
+          <span class="section-number-3">45.2</span>Conclusion</h3>
+        </div>
+        <div id="outline-container-org831879e" class="outline-3">
+          <h3 id="org831879e">
+          <span class="section-number-3">
+          45.3</span>Supplementary</h3>
+          <div class="outline-text-3" id="text-45-3"></div>
+          <div id="outline-container-org5d72f85" class="outline-4">
+            <h4 id="org5d72f85">
+            <span class="section-number-4">45.3.1</span>Romero2020
+            <sub>DecisionTree</sub>
+            <sub>Corrigendum.pdf</sub></h4>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-org3331634" class="outline-2">
+        <h2 id="org3331634">
+        <span class="section-number-2">46</span>Sauer2018
+        <sub>FeatureSelection.pdf</sub></h2>
+        <div class="outline-text-2" id="text-46"></div>
+        <div id="outline-container-org270ea20" class="outline-3">
+          <h3 id="org270ea20">
+          <span class="section-number-3">46.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org1d56a26" class="outline-3">
+          <h3 id="org1d56a26">
+          <span class="section-number-3">46.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orge092e93" class="outline-2">
+        <h2 id="orge092e93">
+        <span class="section-number-2">47</span>Schiff2018
+        <sub>ClinicalRelevanceOfNTM.pdf</sub></h2>
+        <div class="outline-text-2" id="text-47"></div>
+        <div id="outline-container-org68a1609" class="outline-3">
+          <h3 id="org68a1609">
+          <span class="section-number-3">47.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgc1b50bd" class="outline-3">
+          <h3 id="orgc1b50bd">
+          <span class="section-number-3">47.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orga208697" class="outline-2">
+        <h2 id="orga208697">
+        <span class="section-number-2">48</span>Sergeev2016
+        <sub>GenomeWide.pdf</sub></h2>
+        <div class="outline-text-2" id="text-48"></div>
+        <div id="outline-container-org23b9e6b" class="outline-3">
+          <h3 id="org23b9e6b">
+          <span class="section-number-3">48.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org8001cbf" class="outline-3">
+          <h3 id="org8001cbf">
+          <span class="section-number-3">48.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgd4b68c6" class="outline-2">
+        <h2 id="orgd4b68c6">
+        <span class="section-number-2">49</span>Vizcaino2010
+        <sub>ComputatationalPrediction.pdf</sub></h2>
+        <div class="outline-text-2" id="text-49"></div>
+        <div id="outline-container-orgf3050c0" class="outline-3">
+          <h3 id="orgf3050c0">
+          <span class="section-number-3">49.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orgd7a44af" class="outline-3">
+          <h3 id="orgd7a44af">
+          <span class="section-number-3">49.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org9920d3a" class="outline-2">
+        <h2 id="org9920d3a">
+        <span class="section-number-2">50</span>Waman2019
+        <sub>MycobacterialGenomics.pdf</sub></h2>
+        <div class="outline-text-2" id="text-50"></div>
+        <div id="outline-container-org8b7695d" class="outline-3">
+          <h3 id="org8b7695d">
+          <span class="section-number-3">50.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org11e0e5c" class="outline-3">
+          <h3 id="org11e0e5c">
+          <span class="section-number-3">50.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org8187dab" class="outline-2">
+        <h2 id="org8187dab">
+        <span class="section-number-2">51</span>Wang2020
+        <sub>ADeepLearningBasedMethod.pdf</sub></h2>
+        <div class="outline-text-2" id="text-51"></div>
+        <div id="outline-container-orgb219dd1" class="outline-3">
+          <h3 id="orgb219dd1">
+          <span class="section-number-3">51.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orga985613" class="outline-3">
+          <h3 id="orga985613">
+          <span class="section-number-3">51.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org1ccb995" class="outline-2">
+        <h2 id="org1ccb995">
+        <span class="section-number-2">52</span>Weiner2017
+        <sub>HighThroughput.pdf</sub></h2>
+        <div class="outline-text-2" id="text-52"></div>
+        <div id="outline-container-org3cb101e" class="outline-3">
+          <h3 id="org3cb101e">
+          <span class="section-number-3">52.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org3596830" class="outline-3">
+          <h3 id="org3596830">
+          <span class="section-number-3">52.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org614857f" class="outline-2">
+        <h2 id="org614857f">
+        <span class="section-number-2">53</span>Wilder2019
+        <sub>ImprovingTuberculosis.pdf</sub></h2>
+        <div class="outline-text-2" id="text-53"></div>
+        <div id="outline-container-orgff744d1" class="outline-3">
+          <h3 id="orgff744d1">
+          <span class="section-number-3">53.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orga49c810" class="outline-3">
+          <h3 id="orga49c810">
+          <span class="section-number-3">53.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org2b9594f" class="outline-2">
+        <h2 id="org2b9594f">
+        <span class="section-number-2">54</span>Yang2017
+        <sub>MachineLearning.pdf</sub></h2>
+        <div class="outline-text-2" id="text-54"></div>
+        <div id="outline-container-org2b9e421" class="outline-3">
+          <h3 id="org2b9e421">
+          <span class="section-number-3">54.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org44624a5" class="outline-3">
+          <h3 id="org44624a5">
+          <span class="section-number-3">54.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-orgf153e95" class="outline-2">
+        <h2 id="orgf153e95">
+        <span class="section-number-2">55</span>Yang2019
+        <sub>DeepAMRForPredicting.pdf</sub></h2>
+        <div class="outline-text-2" id="text-55"></div>
+        <div id="outline-container-org465183d" class="outline-3">
+          <h3 id="org465183d">
+          <span class="section-number-3">55.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-org5731d90" class="outline-3">
+          <h3 id="org5731d90">
+          <span class="section-number-3">55.2</span>Conclusion</h3>
+        </div>
+      </div>
+      <div id="outline-container-org1791618" class="outline-2">
+        <h2 id="org1791618">
+        <span class="section-number-2">56</span>Zhang2020
+        <sub>AnIntegratedMLApproach.pdf</sub></h2>
+        <div class="outline-text-2" id="text-56"></div>
+        <div id="outline-container-org0035493" class="outline-3">
+          <h3 id="org0035493">
+          <span class="section-number-3">56.1</span>Abstract</h3>
+        </div>
+        <div id="outline-container-orga088806" class="outline-3">
+          <h3 id="orga088806">
+          <span class="section-number-3">56.2</span>Conclusion</h3>
+        </div>
+      </div>
+    </div>
+    <div id="postamble" class="status">
+      <p class="author">Author: Abhinav Sharma</p>
+      <p class="date">Created: 2020-05-07 Thu 23:13</p>
+    </div>
+  </body>
+</html>
