@@ -73,7 +73,7 @@ up-to-date data on Whole Genome Sequencing diversity.
   Salmo- nella, Listeria, Brucella, and more broadly to other organisms such as
   bacterial plant- pathogens.
  
-* [?] Bagherian2019 - Machine learning approaches and databases for prediction of drug–target interaction: a survey paper
+* [-] Bagherian2019 - Machine learning approaches and databases for prediction of drug–target interaction: a survey paper
 ** Notes
 - Not directly related to (N)TB
 - Survey paper
@@ -164,7 +164,7 @@ up-to-date data on Whole Genome Sequencing diversity.
   using genomic data to account for the complex relationship between genotype
   and drug resistance in MTB
  
-* Chen2019 - Beyond multidrug resistance: Leveraging rare variants with machine and statistical learning models in Mycobacterium tuberculosis resistance prediction
+* STRT Chen2019 - Beyond multidrug resistance: Leveraging rare variants with machine and statistical learning models in Mycobacterium tuberculosis resistance prediction
 ** Notes
 - A good in-depth ML based paper
 - Could apply the same techniques to NTM
@@ -187,78 +187,368 @@ up-to-date data on Whole Genome Sequencing diversity.
   statistical learning architectures in predicting phenotypic drug resistance to
   10 anti-tuberculosis drugs
 
- 
 ** Conclusion
-* Ching2018 - Opportunities and obstacles for deep learning in biology and medicine
+- Our approach allowed us to gain new insights into the relative im- portance of
+  specific genetic variants for resistance prediction
+ 
+- In summary, we present an exploration of machine learning and traditional
+  statistical models to identify the resistance of MTB isolates to 10
+  anti-tuberculosis drugs from whole genome sequencing data.
+ 
+- Our models trained on rare and common genetic variants achieved
+  state-of-the-art performance on a large, aggregated TB dataset, with
+  prediction times of less than a tenth of a second, demonstrating the efficacy
+  of our model as a diagnostic tool for MTB drug resistance.
+
+- The MD-WDNN represented the first multidrug model to our knowledge that
+incorporated a high number of genotypic predictors known to be important to
+determining resistance for one or more included drugs
+
+ 
+* [-] Ching2018 - Opportunities and obstacles for deep learning in biology and medicine
 ** Notes
-https://github.com/greenelab/deep-review
+- Found the code https://github.com/greenelab/deep-review
+- Can use this paper to build up the background for using DL in MTB and NTM analysis
 ** FileName
 - Ching2018_OpportunitiesAndObstaclesForDLInBiology.pdf
 ** Abstract
+- Following from an extensive literature review, we find that deep learning has
+  yet to revolutionize biomedicine or definitively resolve any of the most
+  pressing challenges in the field, but promising advances have been made on the
+  prior state of the art
+- The limited amount of labelled data for training presents problems in some
+  domains, as do legal and privacy constraints on work with sensitive health
+  records.
+
 ** Conclusion
-* Deelder2019_MLPredictsAccurately.pdf
+- The most challenging tasks may be those in which predictions are used directly
+  for downstream model- ling or decision-making, especially in the clinic. As an
+  example, errors in sequence variant calling will be amplified if they are used
+  directly for genome-wide association studies.
+ 
+- In addition, the stochasticity and complexity of biological sys- tems imply
+  that for some problems, for instance, predicting gene regulation in disease,
+  perfect accuracy will be unattainable
+ 
+* STRT Deelder2019 - Machine Learning Predicts Accurately Mycobacterium tuberculosis Drug Resistance From Whole Genome Sequencing Data
+** Notes
+- Need to request code from authors
+- Good ML oriented paper
+** FileName
+- Deelder2019_MLPredictsAccurately.pdf
+** Abstract
+- We applied machine learning approaches to 16,688 M. tuberculosis isolates that
+  have undergone WGS and laboratory drug-susceptibility testing (DST) across 14
+  antituberculosis drugs, with 22.5% of samples being multidrug resistant and
+  2.1% being extensively drug resistant.
+ 
+- We fitted separate models for each drug, with and without “co-occurrent
+  resistance” markers known to be causing resistance to drugs other than the one
+  of interest. Predictive performance was measured using sensitivity,
+  specificity, and the area under the receiver operating characteristic curve,
+  assuming DST results as the gold standard.
+
+- Overall, the gradient-boosted-tree models performed better than the
+  classification-tree models.
+
+- Our work demonstrates the utility of machine learning as a flexible approach
+  to drug resistance prediction that is able to accommodate a much larger number
+  of predictors and to summarize their predictive ability, thus assisting
+  clinical decision making and single nucleotide polymorphism detection in an
+  era of increasing WGS data generation.
+ 
+** Conclusion
+
+- The predictive performance was highest for resistance to first-line drugs,
+  and multidrug-resistant tuberculosis (area under the receiver operating characteristic curve above
+  96%), and lowest for third- line drugs (area under the curve below 85%).
+ 
+** Supplementary
+*** Deelder2019_MLPredictsAccurately_Data_Sheet_1.pdf
+* [?] Djout2016 - Predictive modeling targets thymidylate synthase ThyX in Mycobacterium tuberculosis
+** Notes
+- This requires more knowledge of chemistry and perhaps also relies on lab based experiments
+** FileName
+- Djout2016_PredictiveModeling.pdf
+** Abstract
+- ThyX is an essential thymidylate synthase
+that is mechanistically and structurally unrelated to the human enzyme. DNA
+gyrase is a DNA topoisomerase present in bacteria and plants but not animals.
+The current study set out to understand the structure-activity relationships of
+these targets in Mtb using a combination of cheminformatics and in vitro
+screening.
+** Conclusion
+* STRT Donohue2018 - Increasing nontuberculous mycobacteria reporting rates and species diversity identified in clinical laboratory reports
+** Notes
+- This is a survey report about NTM across a couple decades
+- Could be used in building up the background context
+** FileName
+- Donohue2018_IncreasingNTMReportingRates.pdf
+** Abstract
+- Changes in NTM diversity were observed in complex/groups known to be
+  clinically significant. Between 1994 and 2014 the rate implicating M.
+  abscesses-chelonae group and M. avium complex increased by 322 and 149%,
+  respectively.
+** Conclusion
+- Knowledge of the NTM species most frequently associ- ated with adverse human
+  health consequences will assist epidemiological investigators to identify
+  likely sources and modes of exposure associated with these types of in-
+  fections.
+- As the U.S. population ages, the public health burden from NTM associated
+  disorders is expected to increase.
+ 
+* [-] Doshi2017 - Tuberculosis control, and the where and why of artificial intelligence
+** Notes
+- Survey paper
+- Can be used for building background context
+** FileName
+- Doshi2017_TuberculosisControl.pdf
+** Abstract
+** Conclusion
+* [X] Ekins2013 - Enhancing Hit Identification in Mycobacterium tuberculosis Drug Discovery Using Validated Dual-Event Bayesian Models
+** Notes
+- Requires too much domain knowledge
+- Perhaps uses an older technique i.e. HTS for analysis
+- Could use other algorithms on the data used in this study
+** FileName
+- Ekins2013_EnhancingHitIdentification.pdf
+** Abstract
+- High-throughput screening (HTS) in whole cells is widely pursued to find
+  compounds active against Mycobacterium tuberculosis (Mtb) for further
+  development towards new tuberculosis (TB) drugs
+- We have recently built and validated Bayesian machine learning models for
+  predicting compounds with activity against Mtb based on publicly available
+  large-scale HTS data from the Tuberculosis Antimicrobial Acquisition
+  Coordinating Facility
+** Conclusion
+* [X] Ekins2013 - Fusing Dual-Event Data Sets for Mycobacterium tuberculosis Machine Learning Models and Their Evaluation
+** Notes
+- Requires too much domain knowledge
+- Perhaps uses an older technique i.e. HTS for analysis
+- Could use other algorithms on the data used in this study
+** FileName
+- Ekins2013_FusingDualEvent.pdf
+** Abstract
+- A cheminformatics data-fusion
+approach followed by Bayesian machine learning, Support Vector Machine, or Recursive
+Partitioning model development (based on publicly available Mtb screening data) was used to
+compare individual data sets and subsequent combined models.
+- We demonstrate that
+combining three data sets incorporating antitubercular and cytotoxicity data in Vero cells
+from our previous screens results in external validation receiver operator curve (ROC) of
+0.83 (Bayesian or RP Forest)
+** Conclusion
+* [X] Ekins2014_AreBiggerDataSets.pdf
+** Notes
+- Requires too much domain knowledge
+- Perhaps uses an older technique i.e. HTS for analysis
+- Could use other algorithms on the data used in this study
 ** Title
 ** Abstract
 ** Conclusion
-* Djout2016_PredictiveModeling.pdf
+* [X] Ekins2014_CombiningComputationalMethods.pdf
+** Notes
+- Requires too much domain knowledge
+- Perhaps uses an older technique i.e. HTS for analysis
+- Could use other algorithms on the data used in this study
 ** Title
 ** Abstract
 ** Conclusion
-* Donohue2018_IncreasingNTMReportingRates.pdf
+* [X] Ekins2016_MachineLearningModel.pdf
+** Notes
+- Requires too much domain knowledge
+- Perhaps uses an older technique i.e. HTS for analysis
+- Could use other algorithms on the data used in this study
 ** Title
 ** Abstract
 ** Conclusion
-* Doshi2017_TuberculosisControl.pdf
+* [X] Ekins2017_MachineLearning.pdf
+** Notes
+- Requires too much domain knowledge
+- Perhaps uses an older technique i.e. HTS for analysis
+- Could use other algorithms on the data used in this study
 ** Title
 ** Abstract
 ** Conclusion
-* Ekins2013_EnhancingHitIdentification.pdf
-** Title
+* [-] Engle2019 - Performance of Qure.ai automatic classifiers against a large annotated database of patients with diverse forms of tuberculosis
+** Notes
+- Image processing
+- Mentiones the database source, NIH
+- Has CSV as supplementary data
+** FileName
+- Engle2019_PerformanceOfQureAI.pdf
 ** Abstract
+- Availability of trained radiologists for fast processing of CXRs in regions
+  burdened with tuberculosis always has been a challenge, affecting both timely
+  diagnosis and patient monitoring.
+ 
+- The Qure.ai qXR arti- ficial intelligence automated CXR interpretation tool,
+  was blind-tested on the 346 radiologist- annotated CXRs from the TBPP
+  database.
+
+- We conclude that applying fully automated Qure.ai CXR analysis tool is useful
+  for fast, accurate, uniform, large-scale CXR annotation assistance, as it
+  performed well even for DR-TB cases that were not used for initial training.
+ 
 ** Conclusion
-* Ekins2013_FusingDualEvent.pdf
-** Title
+- We demonstrated that the Qure.ai qXR CXR annotations for cavity, nodule,
+  pleural effusion, and hilar lymphadenopathy, are in statistical agreement with
+  radiologist CXR annotations.
+ 
+- A corresponding analysis of patient case matched
+  CT image annotations recorded within 30 days of a CXR supports this result,
+  demonstrating statistical significance for cavity, pleural effusion, hilar
+  lymphadenopathy, and atelectasis.
+ 
+* [-] Greif2020 - Species Distribution and Isolation Frequency of Nontuberculous Mycobacteria, Uruguay
+** Notes
+- Survey paper
+** FileName
+- Greif2020_FrequencyOfNTM.pdf
 ** Abstract
+-  Nontuberculous mycobacteria (NTM) increasingly are recognized as
+  opportunistic pathogens of humans.
+-  NTM species distribution is well documented in Europe and North America
 ** Conclusion
-* Ekins2014_AreBiggerDataSets.pdf
-** Title
+- Our findings indicate that rate of NTM have risen nearly 5-fold (4.79) in
+  Uruguay, from 0.33 cas- es/100,000 inhabitants in 2006 to 1.57 cases/100,000
+  inhabitants in 2018.
+ 
+* [-] Hicks2019 - Evaluation of parameters affecting performance and reliability of machine learning-based antibiotic susceptibility testing from whole genome sequencing data
+** Notes
+- Can perform the mentioned analysis on the MTB and NTM data
+- The paper focuses on the factors affecting the application and clinical application of ML models
+** FileName
+- Hicks2019_EvaluationOfParameters.pdf
 ** Abstract
+- There has been no systematic evaluation of factors that may influence
+  performance of ML models, how they might apply to and vary across clinical
+  populations, and what the implications might be in the clinical setting
+ 
+- We performed a meta-analysis of seven large Neisseria gonorrhoeae datasets, as
+  well as Klebsiella pneumoniae and Acinetobacter baumannii datasets, with whole
+  genome sequence data and antibiotic susceptibility phenotypes using set
+  covering machine classifi- cation, random forest classification, and random
+  forest regression models to predict resis- tance phenotypes from genotype.
+ 
+- We demonstrate how model performance varies by drug, dataset, resistance
+  metric, and species, reflecting the complexities of generating clinically
+  relevant conclusions from machine learning-derived models.
+
+- Our results highlight significant biological and technical challenges
+  facing the application of machine learning-based prediction of antibiotic
+  resistance as a diagnostic tool.
+
 ** Conclusion
-* Ekins2014_CombiningComputationalMethods.pdf
-** Title
+* STRT Hussain2018 - Predicting treatment outcome of drug-susceptible tuberculosis patients using machine-learning models
+** Notes
+- Can use a different algorithm (XgBoost) on the dataset
+- Sample data and complete code is shared
+  https://github.com/biosharp-dotnet/tuberculosis-predictive-analytics
+- Need to find the full dataset of 4000 surveyed patients
+** FileName
+- Hussain2018_PredictingTreatmentOutcomes.pdf
 ** Abstract
+- Tuberculosis (TB) is a deadly contagious disease and a serious global health
+  problem. It is curable but due to its lengthy treatment process, a patient is
+  likely to leave the treatment incomplete, leading to a more lethal, drug
+  resistant form of disease.
+ 
+- We aim to facilitate TB programs by predicting the outcome of the treatment of
+  a particular patient at the start of treatment so that their health workers
+  can be utilized in a targeted and cost-effective way.
+
+- The problem was modeled as a classification problem, and the outcome of
+  treatment was predicted using state-of-art implementations of 3 machine learning algorithms
+ 
 ** Conclusion
-* Ekins2016_MachineLearningModel.pdf
-** Title
+- Empirical results using data of more than 4000 patients reveal that we can
+  predict with more than 76% accuracy whether a TB patient would complete his (or her) treatment or not
+-
+* STRT Jamal2020 - Artificial Intelligence and Machine learning based prediction of resistant and susceptible mutations in Mycobacterium tuberculosis
+** Notes
+- Used many ML algorithms, 85% accuracy
+- Could use XgBoost
+- Could conduct a similar study for NTM
+- Mentions many online bio databases
+** FileName
+- Jamal2020_AIAndMLBasedPredictive.pdf
 ** Abstract
+- The present work is a computational framework that uses artificial
+  intelligence (AI) based machine learning (ML) approaches for predicting
+  resistance in the genes rpoB, inhA, katG, pncA, gyrA and gyrB for the drugs
+  rifampicin, isoniazid, pyrazinamide and fluoroquinolones
+
+- The single nucleotide variations were represented by several sequence and
+  structural features that indicate the influence of mutations on the target
+  protein coded by each gene.
+ 
 ** Conclusion
-* Ekins2017_MachineLearning.pdf
-** Title
+
+- The present study proposes an AI/ML method to classify resistant and susceptible
+  mutations in TB and predict novel resistance conferring mutations.
+ 
+- The impact of the reported mutations was captured in the form of changes in the amino acid
+  residues, and the consequent change in properties vis-a-vis wild-type and mutant
+  proteins and represented as features used to train the models.
+
+- The classification model was generated for each gene and predictions were made for
+  SNVs linked with each gene for each drug
+
+* STRT Kavvas2018 - Machine learning and structural analysis of Mycobacterium tuberculosis pan-genome identifies genetic signatures of antibiotic resistance
+** Notes
+- They developed and online platform
+ 
+- Can be applied to NTM
+
+- Code is available
+  https://github.com/biosharp-dotnet/microbial_AMR_ML
+** FileName
+- Kavvas2018_MachineLearning_.pdf
 ** Abstract
+- The many publicly available datasets describing its AMR characteristics demand
+  disparate data-type analyses.
+ 
+- Here, we develop a reference strain-agnostic computational platform that uses
+  machine learning approaches, complemented by both genetic interaction analysis
+  and 3D structural mutation-mapping, to identify signatures of AMR evolution to
+  13 antibiotics.
+
+- First, a pan-genome analysis shows that M. tuberculosis is highly conserved
+  with sequenced variation concentrated in PE/PPE/PGRS genes.
+
+- Second, the platform corroborates 33 genes known to confer resistance and identifies 24
+  new genetic signatures of AMR.
+
+- Third, 97 epistatic interactions across 10 resistance classes are revealed.
+
+- Fourth, detailed structural analysis of these
+  genes yields mechanistic bases for their selection.
+
+- The platform can be used to study other human pathogens
+
 ** Conclusion
-* Engle2019_PerformanceOfQureAI.pdf
-** Title
+
+- The platform was applied to 1595 sequenced strains to yield results in four
+  categories: pan-genome properties, identification of genes conferring
+  antibiotic resistance, their epistatic interactions, and protein structure
+  based mechanistic insights.
+ 
+* Khanna2018 - Ensemble Technique for Prediction of T-cell Mycobacterium tuberculosis Epitopes
+** Notes
+-
+** FileName
+- Khanna2018_EnsembleTechnique.pdf
 ** Abstract
-** Conclusion
-* Greif2020_FrequencyOfNTM.pdf
-** Title
-** Abstract
-** Conclusion
-* Hussain2018_PredictingTreatmentOutcomes.pdf
-** Title
-** Abstract
-** Conclusion
-* Jamal2020_AIAndMLBasedPredictive.pdf
-** Title
-** Abstract
-** Conclusion
-* Kavvas2018_MachineLearning_.pdf
-** Title
-** Abstract
-** Conclusion
-* Khanna2018_EnsembleTechnique.pdf
-** Title
-** Abstract
+- Development of an effective machine-learning model for T-cell Mycobacterium
+  tuberculosis (M. tuberculosis) epitopes is beneficial for saving biologist’s
+  time and effort for identifying epitope in a targeted antigen.
+
+- The proposed method is able to work with variable length epitopes having size
+even greater than 9-mers. Identification of T-cell or B-cell epitopes in the
+targeted antigen is the main goal in designing epitope-based vaccine,
+immune-diagnostic tests and antibody production
+
 ** Conclusion
 * Killian2019_LearningToPrescribe.pdf
 ** Title
