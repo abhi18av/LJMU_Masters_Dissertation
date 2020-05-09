@@ -1,8 +1,7 @@
 #+TITLE: Other Papers
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
-#+HTML_HEAD: <style> p{max-width:800px;}</style>
-#+HTML_HEAD: <style> li{max-width:800px; margin-bottom:20px}</style
-
+#+HTML_HEAD: <style> p{margin-bottom:5px;}</style>
+#+HTML_HEAD: <style> li{margin-bottom:10px}</style
 
 * TODO Advances in Computational Studies of Potential Drug Targets in Mycobacterium tuberculosis.
 https://www.ncbi.nlm.nih.gov/pubmed/30084331
@@ -537,9 +536,11 @@ from our previous screens results in external validation receiver operator curve
   antibiotic resistance, their epistatic interactions, and protein structure
   based mechanistic insights.
  
-* Khanna2018 - Ensemble Technique for Prediction of T-cell Mycobacterium tuberculosis Epitopes
+* [-] Khanna2018 - Ensemble Technique for Prediction of T-cell Mycobacterium tuberculosis Epitopes
 ** Notes
--
+- Uses multiple bio and ML packages in R
+- Doesn't use XgBoost or H20
+- Code hasn't been shared
 ** FileName
 - Khanna2018_EnsembleTechnique.pdf
 ** Abstract
@@ -548,54 +549,163 @@ from our previous screens results in external validation receiver operator curve
   time and effort for identifying epitope in a targeted antigen.
  
 - The proposed method is able to work with variable length epitopes having size
-even greater than 9-mers. Identification of T-cell or B-cell epitopes in the
-targeted antigen is the main goal in designing epitope-based vaccine,
-immune-diagnostic tests and antibody production
+  even greater than 9-mers. Identification of T-cell or B-cell epitopes in the
+  targeted antigen is the main goal in designing epitope-based vaccine,
+  immune-diagnostic tests and antibody production
 
+- The proposed ensemble model achieves 82.0% accuracy, 0.89 specificity, 0.77
+  sensitivity with repeated k-fold cross-validation having average accuracy of
+  80.61%.
+ 
 ** Conclusion
-* Killian2019_LearningToPrescribe.pdf
-** Title
+- Three models (decision tree, avNNet and RRF) have been used to design the
+  ensemble model which produces high accuracy, Gini, AUC, specificity and
+  sensitivity.
+
+- To validate and compare the proposed ensemble model, NetMHC 4.0, NetMHC 2.3
+  and CTLpred servers have been considered.
+ 
+
+* [-] Killian2019 - Learning to Prescribe Interventions for Tuberculosis Patients Using Digital Adherence Data
+** Notes
+- Wasn't able to find the data or the code in the paper
+** FileName
+- Killian2019_LearningToPrescribe.pdf
 ** Abstract
+- We analyze data from one city served by 99DOTS, a phone-call- based DAT
+  deployed for Tuberculosis (TB) treatment in India where nearly 3 million
+  people are afflicted with the disease each year
+
+- We then construct a deep learning model, demonstrate its interpretability, and
+  show how it can be adapted and trained in three different clinical scenarios
+  to better target and improve patient care.
+ 
 ** Conclusion
-* Kouchaki2019_ApplicationOfML.pdf
-** Title
+- We finally show that tailoring our model for a specific intervention via
+  decision-focused learning can improve performance by a further 15%.
+* WAIT Kouchaki2019 - Application of machine learning techniques to tuberculosis drug resistance analysis
+** Notes
+- I've asked the author to provide the source code via ResearchGate
+- They've used 6 ML classifiers, not XgBoost or NeuralNetworks
+** FileName
+- Kouchaki2019_ApplicationOfML.pdf
 ** Abstract
+- Machine learning methods have been widely applied for timely predicting
+  resistance of MTB given a specific drug and identifying resistance markers.
+  However, they have been not validated on a large cohort of MTB samples from
+  multi-centers across the world in terms of resistance prediction and
+  resistance marker identification
+
+- Several machine learning classifiers and linear dimension re- duction
+  techniques were developed and compared for a cohort of 13 402 isolates
+  collected from 16 countries across 6 continents and tested 11 drugs.
+ 
 ** Conclusion
-* Kouchaki2020_MultiLabelRandomForest.pdf
-** Title
+- Developing machine learning techniques is especially important to im- prove TB
+  resistance prediction, mainly sensitivity for less-studied drugs.
+-
+** Supplementary
+*** Kouchaki2019_ApplicationOfML_Supplementary.pdf
+* STRT Kouchaki2020 - Multi-Label Random Forest Model for Tuberculosis Drug Resistance Classification and Mutation Ranking
+** Notes
+- Source code and data are both available
+** FileName
+- Kouchaki2020_MultiLabelRandomForest.pdf
 ** Abstract
+- Due to standard regimens for the use of first-line antibiotics, resistance
+  co-occurrence, in which samples are resistant to multiple drugs, is common.
+  Analysing all drugs simultaneously should therefore enable patterns reflecting
+  resistance co-occurrence to be exploited for resistance prediction
+
+- Here, multi-label random forest (MLRF) models are compared with single-label
+  random forest (SLRF) for both predicting phenotypic resistance from whole
+  genome sequences and identifying important mutations for better prediction of
+  four first-line drugs in a dataset of 13402 Mycobacterium tuberculosis
+  isolates.
+  
 ** Conclusion
 ** Supplementary
 *** Kouchaki2020_MultiLabel.zip
 *** Kouchaki2020_MultiLabel_DataSheet_1.pdf
 *** Kouchaki2020_MultiLabel_DataSheet_2.pdf
-*** Code
-Kouchaki2020_MultiLabelSLRF/checkmutations.py
-Kouchaki2020_MultiLabelSLRF/common_functions.py
-Kouchaki2020_MultiLabelSLRF/cvcodes.py
-Kouchaki2020_MultiLabelSLRF/demo-mtbmlrf.py
-Kouchaki2020_MultiLabelSLRF/ensemble_learning_multilabel.py
-Kouchaki2020_MultiLabelSLRF/fakefeat.csv
-Kouchaki2020_MultiLabelSLRF/fakepheno.csv
-Kouchaki2020_MultiLabelSLRF/feature_extraction.py
-Kouchaki2020_MultiLabelSLRF/load-dataset.py
-Kouchaki2020_MultiLabelSLRF/mutation_ranking.py
-Kouchaki2020_MultiLabelSLRF/print_stats.py
-Kouchaki2020_MultiLabelSLRF/readme
-Kouchaki2020_MultiLabelSLRF/treeplot.py
+* [-] Kovalishyn2019 - Hybrid Design of Isonicotinic Acid Hydrazide Derivatives: Machine Learning Studies, Synthesis and Biological Evaluation of their Anti- tuberculosis Activity
+** Notes
+- Is inclined more towards Chemistry (reagents) wrt TB
+** FileName
+- Kovalishyn2019_HybridDesign.pdf
+** Abstract
+- The goal of this work is to identify potent small molecule anti-TB agents by
+  machine learning, synthesis and biological evaluation.
 
-* Kovalishyn2019_HybridDesign.pdf
-** Title
-** Abstract
+- The On-line Chemical Database and Modeling Environment (OCHEM) was used to
+  build pre- dictive machine learning models. Seven compounds were synthesized
+  and tested in vitro for their an- titubercular activity against H37Rv and
+  resistant Mtb strains.
+
+-
 ** Conclusion
-* Kumari2019_AGeneticProgramming.pdf
-** Title
+- The goal of this work was to investigate isoniazid- thiazole hybrid compounds
+  taking into consideration the key structural futures known to be important for
+  their antituber- cular activity.
+
+- The created binary classification models demonstrated good balanced accuracy.
+  The predictive power of the binary classifiers was tested by a 5-fold cross-
+  validation and resulted in balanced accuracies of 61–78 %. Seven new compounds
+  were synthesized and their activity against Mtb H37Rv and MDR strains was
+  evaluated at two concentrations (1.5 and 50 μМ) using rifampin and isoniazid
+  as controls.
+ 
+* [-] Kumari2019 - A genetic programming-based approach to identify potential inhibitors of serine protease of Mycobacterium tuberculosis
+** Notes
+- Uses Genetic algorithms and ML algorithms as well
+- Data or code isn't available
+** FileName
+- Kumari2019_AGeneticProgramming.pdf
 ** Abstract
+- We applied genetic programming approaches to understand the impact of
+  descriptors on inhibitory effects of serine protease inhibitors of
+  Mycobacterium tuberculosis (Mtb) and the discovery of new in- hibitors as drug
+  candidates
+
+- The experimental dataset of serine protease inhibitors of Mtb descriptors was
+  optimized by genetic algorithm (GA) along with the correlation-based feature
+  selection (CFS) in order to develop predictive models using machine-learning
+  algorithms.
+
+- The use of CFS-GA with random forest-enhanced classification accuracy and
+  predicted new serine protease inhibitors of Mtb, which can be used for better
+  drug development against tuberculosis.
+ 
 ** Conclusion
-* Lai2019_ComparisonOfThePredictiveOutcomes.pdf
+-  Comparative analysis of statistical measures for four different
+  machine-learning algorithms revealed that RF models with CFS-GA performed
+  better than the others.
+
+- The best RF models with CFS-GA predicted new serine protease inhibitors of
+  Mtb, which can be used for better drug development against tuberculosis
+ 
+* [-] Lai2019 - Comparison of the Predictive Outcomes for Anti-Tuberculosis Drug-Induced Hepatotoxicity by Different Machine Learning Techniques
+** Notes
+- Good ML oriented paper
+- Can't find the data or code
+** FileName
+- Lai2019_ComparisonOfThePredictiveOutcomes.pdf
 ** Abstract
+- The study compared the performance of artificial neural network, support
+  vector machine and random forest on predicting anti-tuberculosis drugs induced
+  hepatotoxicity.
+
+- Combining genomic and clinical data can further increase the area under
+  receiver operating characteristic curve than using genomic or clinical data
+  alone.
+
+- Nine models were created with 7 clinical factors and 4 genotypes
+ 
 ** Conclusion
-* Lane2018_ComparingAndValidating.pdf
+* Lane2018 - Comparing and Validating Machine Learning Models for Mycobacterium tuberculosis Drug Discovery
+** Notes
+** FileName
+- Lane2018_ComparingAndValidating.pdf
 ** Abstract
 ** Conclusion
 * Lin2001_ConservedCodonComposition.pdf
