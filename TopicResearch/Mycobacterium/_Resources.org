@@ -1218,3 +1218,23 @@ https://deepbiolab.coding.net/s/fbdb894d-2730-425b-bac6-18ba55396bab
  
  
 ** Conclusion
+
+* [?] Gabrilian2019 - TB DEPOT (Data Exploration Portal): A multi- domain tuberculosis data analysis resource
+** Notes
+** FileName
+- Gabrielian2019_TbDepotDataAnalysisResource.pdf
+** Abstract
+** Conclusion
+* [X] Garnier2019 - Automatic diagnostics of tuberculosis using convolutional neural networks analysis of MODS digital images
+** Notes
+** FileName
+- Garnier2019_TbImagesDiagnostics.pdf
+** Abstract
+** Conclusion
+* [-] Muzondiwa2020 - Resistance Sniffer: An online tool for prediction of drug resistance patterns of Mycobacterium tuberculosis isolates using next generation sequencing data
+** Notes
+- In future, this paper could be the foundation of a proper prdiction tool and paper
+** FileName
+- Muzondiwa2020_ResistanceSniffer.pdf
+** Abstract
+** Conclusion
