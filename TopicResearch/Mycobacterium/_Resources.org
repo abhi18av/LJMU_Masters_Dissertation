@@ -979,49 +979,242 @@ from our previous screens results in external validation receiver operator curve
 - Schiff2018_ClinicalRelevanceOfNTM.pdf
 ** Abstract
 ** Conclusion
-* Genome-wide Analysis of MDR and XDR Tuberculosis from Belarus: Machine-learning Approach
+* WAIT Sergeev2016 - Genome-wide Analysis of MDR and XDR Tuberculosis from Belarus: Machine-learning Approach
+** Notes
+- Uses XgBoost XGB classifier
+
+- Can apply this approach for NTM
+
+- Involves mathematical equations
+
+- I've contacted the authors for the code
 ** FileName
 - Sergeev2016_GenomeWide.pdf
-** Notes
 ** Abstract
+- Alterations in pathogen genomes are among the main mechanisms by which
+  microorganisms exhibit drug resistance.
+
+- Analysis of 144 M. tuberculosis strains of different phenotypes including drug
+  susceptible, MDR and XDR isolated in Belarus was fulfilled in this paper. A
+  wide range of machine learning methods that can discover SNPs related to
+  drug-resistance in the whole bacteria genomes was investigated
+
+- Besides single-SNP testing approaches, methods that allow detecting joint
+  effects from interacting SNPs were considered.
+
+- Analysis of whole-genome sequences often leads to situations where the number
+  of treated features exceeds the number of available observations. For this
+  reason, special attention is paid to fair evaluation of the model prediction
+  quality and minimizing the risk of overfitting while estimating the underlying
+  parameters.
+
+ 
 ** Conclusion
-* Vizcaino2010_ComputatationalPrediction.pdf
-** FileName
+* [-] Vizcaino2010 - Computational Prediction and Experimental Assessment of Secreted/Surface Proteins from Mycobacterium tuberculosis H37Rv
 ** Notes
+- I suspect, this involves some work in the wetlab
+
+- Might be interesting for Emilyn as it involves quite a lot of biological
+  knowledge as well
+
+- Has many microscopic photos of the bacteria
+** FileName
+- Vizcaino2010_ComputatationalPrediction.pdf
 ** Abstract
+- The mycobacterial cell envelope has been implicated in the pathogenicity of
+  tuberculosis and therefore has been a prime target for the identification and
+  characterization of surface proteins with potential application in drug and
+  vaccine development.
+
+- In this study, the genome of Mycobacterium tuberculosis
+  H37Rv was screened using Machine Learning tools that included feature-based
+  predictors, general localizers and transmembrane topology predictors to
+  identify proteins that are potentially secreted to the surface of M.
+  tuberculosis, or to the extracellular milieu through different secretory
+  pathways.
+
+- Surface localization was also confirmed for the positive controls, whereas
+  negative controls were located on the cytoplasm. Based on statistical learning
+  methods, we obtained computational subcellular localization predictions that
+  were experimentally assessed and allowed us to construct a computational
+  protocol with experimental support that allowed us to identify a new set of
+  secreted/surface proteins as potential vaccine candidates.
+
 ** Conclusion
-* Waman2019_MycobacterialGenomics.pdf
-** FileName
+* [-] Waman2019 - Mycobacterial genomics and structural bioinformatics: opportunities and challenges in drug discovery
 ** Notes
+- Survey paper, can be used for background context
+** FileName
+- Waman2019_MycobacterialGenomics.pdf
 ** Abstract
+- Here we describe the impact of the rapid expansion of genome sequencing and
+  genome/pathway annotations that have greatly improved the progress of
+  structure-guided drug discovery.
+
+- We focus on the applications of comparative genomics, metabolomics,
+  evolutionary bioinformatics and structural proteomics to identify potential
+  drug targets. The opportunities and challenges for the design of drugs for M.
+  tuberculosis, M. leprae and M. abscessus to combat resistance are discussed.
+ 
 ** Conclusion
-* Wang2020_ADeepLearningBasedMethod.pdf
-** FileName
+* [?] Wang2020 - A deep learning-based method for drug-target interaction prediction based on long short-term memory neural network
 ** Notes
+
+- Doesn't directly relate to MTB or NTM, but could be used as a reference in
+  future work
+ 
+- Builds up the mathematical reasoning wrt bio-chemistry
+
+- Explains the techniques well
+
+- Data and code is available
+https://deepbiolab.coding.net/s/fbdb894d-2730-425b-bac6-18ba55396bab
+** FileName
+- Wang2020_ADeepLearningBasedMethod.pdf
 ** Abstract
+- Due to the influence of throughput, precision and cost, traditional
+  experimental methods are difficult to be widely used to infer these potential
+  Drug-Target Interactions (DTIs). Therefore, it is urgent to develop effective
+  computational methods to validate the interaction between drugs and target.
+ 
 ** Conclusion
-* Weiner2017_HighThroughput.pdf
-** FileName
+
+- We have developed a deep learning-based method to infer potential DTIs using
+  compounds and proteins sequence.
+
+- Comparing with other classifiers, we have provided initial evidence that
+  DeepLSTM outperforms traditional ma- chine learning system on the DTIs task.
+
+
+** Supplementary
+- Wang2020_ADeepLearningBasedMethod_Code.py
+- Wang2020_ADeepLearningBasedMethod_Supplementary.pdf
+* [?] Weiner2017 - High-throughput and computational approaches for diagnostic and prognostic host tuberculosis biomarkers
 ** Notes
+- Survey paper
+ 
+** FileName
+- Weiner2017_HighThroughput.pdf
 ** Abstract
+- High-throughput techniques strive to identify new biomarkers that will be
+  useful for the diagnosis, treatment, and prevention of tuberculosis (TB).
+  However, their analysis and interpretation pose considerable challenges.
+
+- Recent developments in the high-throughput detection of host biomarkers in TB
+  are reported in this review.
+ 
 ** Conclusion
-* Wilder2019_ImprovingTuberculosis.pdf
+* WAIT Wilder2019 - Improving tuberculosis treatment by integrating optimization and learning
 ** FileName
+- Wilder2019_ImprovingTuberculosis.pdf
 ** Notes
+
+- Mentions https://www.99dots.org/ for strategic intervention
+
+- Emailed the 99dots team for some data access
 ** Abstract
+- The prevalence of TB is caused in part by non-adherence to medication, which
+  results in greater risk of death, reinfection and contraction of
+  multidrug-resistant TB
+
+- Using data on 17,000 Indian patients provided by the NGO Everwell, we consider
+  the problem of predicting which patients are likely to miss doses in the
+  near future and optimizing interventions by health workers to avert such
+  treatment failures.
+ 
 ** Conclusion
-* Yang2017_MachineLearning.pdf
-** FileName
+* STRT Yang2017 - Machine learning for classifying tuberculosis drug-resistance from DNA sequencing data
 ** Notes
+- Code is available and already downloaded
+
+- Builds upon a previous publication Walker2015 for narrowing the feature set.
+
+- The data is the same as used in Walker2015, 1839 samples
+** FileName
+- Yang2017_MachineLearning.pdf
 ** Abstract
+- Given the availability of DNA sequencing data from MTB, we developed machine
+  learning models for a cohort of 1839 UK bacterial isolates to classify MTB
+  resistance against eight anti- TB drugs (isoniazid, rifampicin, ethambutol,
+  pyrazinamide, ciprofloxacin, moxifloxacin, ofloxacin, streptomycin) and to
+  classify multi-drug resistance.
+
 ** Conclusion
-* Yang2019_DeepAMRForPredicting.pdf
-** FileName
+- We performed both principal component analysis (PCA) and a sparse logistic
+  version (SL-PCA) to explore the underlying structure of genetic variation
+  within our cohort of bacterial isolates.
+
+- Among the machine learning classifiers, PM and SVM-RBF rank as the top two
+  best-performing classifiers overall. The former integrates prior knowledge of
+  resistance determinant explicitly (though prior knowledge about susceptibility
+  determinants, lineage defining SNPs and compensatory mutations was not
+  included), and the latter suggests that the method’s nonlinear model is
+  suitable for unveiling nonlinear rela- tionships among mutations in terms of
+  resistance association for INH, CIP and SM.
+
+- This work showed great potentials of machine learning in improving resistance
+  classification given high-dimensional genetic data, especially when the
+  underlying biological resistance mecha- nism is poorly understood for many
+  drugs
+ 
+** Supplementary
+- Yang2017_MachineLearning_Code.zip
+- Yang2017_MachineLearning_Supplement.pdf
+- Yang2017_MachineLearning_Walker2015_BasePaper.pdf
+* STRT Yang2019 - DeepAMR for predicting co-occurrent resistance of Mycobacterium tuberculosis
 ** Notes
+- Code is available and already downloaded
+
+- Paper also references
+  https://github.com/biosharp-dotnet/Keras_Deep_Clustering
+
+- Makes use of Multi-label K-nearest neighbour (MLKNN)
+** FileName
+- Yang2019_DeepAMRForPredicting_Code.pdf
 ** Abstract
+- Existing methods based on genetic data analysis of Mycobacterium tuberculosis
+  (MTB) have been able to predict resistance of MTB to individual drugs, but
+  have not considered the resistance co-occurrence and cannot capture latent
+  structure of genomic data that corresponds to lineages.
+
+- We then proposed an end-to-end multi-task model with deep denoising
+  auto-encoder (DeepAMR) for multiple drug classification and developed
+  DeepAMR_cluster, a clustering variant based on DeepAMR, for learning clusters
+  in latent space of the data.
+ 
 ** Conclusion
-* Zhang2020_AnIntegratedMLApproach.pdf
-** FileName
+- The resistance prediction for the MTB is essentially a multi-label learn- ing
+  problem, where each isolate is resistant to a subset of the examined drugs.
+  The input is mutations for individual isolates, such that the pres- ence of a
+  SNP variable is denoted as one and zero otherwise
+
+- We only considered cross-resistance between four first-line drugs but ignored
+  that of second-line drugs because: (i) the inaccurate phenotyping for
+  second-line drugs would introduce large error in the classification for
+  first-line drugs and (ii) a small number of resistant isolates would result in
+  over-fitting easily for such a complex model.
+ 
+** Supplementary
+- Yang2019_DeepAMRForPredicting_Code.zip
+- Yang2019_DeepAMRForPredicting_Supplementary.zip
+* [?] Zhang2020 - An integrated machine learning approach for predicting DosR-regulated genes in Mycobacterium tuberculosis
 ** Notes
+- Involves some background knowledge of Genomics
+
+- The papar has mathematical rigor
+** FileName
+- Zhang2020_AnIntegratedMLApproach.pdf
 ** Abstract
+- DosR is an important regulator of the response to stress such as limited
+  oxygen availability in Mycobacterium tuberculosis
+
+- Most of the approaches capture only a first-order approximation to the complex
+  transcriptional processes by assuming linear gene responses and linear
+  dynamics in TFA, or ignore the temporal information in data from such systems.
+
+
+- Our reconstructed TFA is closer to the experimentally determined profile of
+  p53 concentration than that from the original study.
+ 
+ 
 ** Conclusion
