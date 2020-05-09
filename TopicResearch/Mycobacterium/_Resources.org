@@ -150,7 +150,8 @@ up-to-date data on Whole Genome Sequencing diversity.
   well as continuing to improve the performance of the computing algorithms
 
 * DONE Chen2018 - Deep Learning Predicts Tuberculosis Drug Resistance Status from Whole-Genome Sequencing Data
-EMILYN: Please confirm if
+EMILYN: Please confirm if similar initial data could be found for NTM then we
+can work on NTM projects. Otherwise we can work on same data with different algorithm
 ** Notes
 - A good in-depth ML based paper
 - They've shared high-level implementation details briefly
