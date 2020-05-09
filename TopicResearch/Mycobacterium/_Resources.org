@@ -149,7 +149,8 @@ up-to-date data on Whole Genome Sequencing diversity.
 - We will continue to develop the large scale, real-world X-ray TB database, as
   well as continuing to improve the performance of the computing algorithms
 
-* STRT Chen2018 - Deep Learning Predicts Tuberculosis Drug Resistance Status from Whole-Genome Sequencing Data
+* DONE Chen2018 - Deep Learning Predicts Tuberculosis Drug Resistance Status from Whole-Genome Sequencing Data
+EMILYN: Please confirm if
 ** Notes
 - A good in-depth ML based paper
 - They've shared high-level implementation details briefly
@@ -158,7 +159,11 @@ up-to-date data on Whole Genome Sequencing diversity.
   https://github.com/biosharp-dotnet/wdnn
 - Could apply the same techniques to NTM
 - Could change the algorithm and apply on the same data
-- The author built upon the previous paper by improving the accuracy of the ML model - we could do the same with NTM
+- Could compare multiple algorithms in context of NTM
+  EMILYN: We could make these three projects from this paper itself.
+- The author built upon the previous paper by improving the accuracy of the ML
+  model - we could do the same with NTM
+ 
 ** FileName
 - Chen2018_DeepLearningPredictsTuberculosis.pdf
 ** Abstract
@@ -169,8 +174,10 @@ up-to-date data on Whole Genome Sequencing diversity.
  
 - The proposed wide and deep neural network (WDNN) achieved improved predictive
   performance compared to regularized logistic regression and random forest
- 
+
+  EMILYN: We can package this tool for bioconda useful
 ** Conclusion
+
 - We demonstrate that L2 regression and MD-WDNN trained on a larger diverse
   dataset using a method of aggregating rare variants outperforms our previously
   reported random forest model. (Chen, 2018)
