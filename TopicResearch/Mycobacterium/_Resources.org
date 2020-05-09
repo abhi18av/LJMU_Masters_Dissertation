@@ -33,10 +33,15 @@ https://www.ncbi.nlm.nih.gov/pubmed/24245763
   to delays and higher costs. More specific biomarkers to monitor the progress
   of treatment and test cure are lacking.
  
-* STRT Aze2015 - Genomics and Machine Learning for Taxonomy Consensus: The Mycobacterium tuberculosis Complex Paradigm
+* [ ] Aze2015 - Genomics and Machine Learning for Taxonomy Consensus: The Mycobacterium tuberculosis Complex Paradigm
 ** Notes
-- Can adopt a similar approach towards the classification of NTB lineages
-- Can alter the algorithm to XGBoost to Neural Networks to improve accuracy
+- Can adopt a similar approach towards the classification of NTM lineages
+  EMILYN: Taxonomy does not make sense for NTM. Even a DB doesn't exist
+  specifically for Resistance and Prediction but the raw genomes are available
+  in NCBI
+ 
+- Can alter the algorithm to XGBoost or Neural Networks to improve accuracy
+  EMILYN: This has been done already
 ** FileName
 - Aze2015_GenomicsAndMachine.pdf
 ** Abstract
@@ -44,13 +49,17 @@ https://www.ncbi.nlm.nih.gov/pubmed/24245763
   years through intensive clinical isolation, advances in sequencing and in the
   description of fast-evolving loci (CRISPR and MIRU-VNTR)
 
+  EMILYN: This paper has been a bit outdated now since someone reclassified these
+  again and found MTB is a complex and combines ( Tuberculosis, Africanum and
+  Bovis )
+ 
 - The objectives of this study were 1) to explicit the consensus that exists
   between the alternative taxonomies, and 2) to provide an on-line tool to ease
   classification of new isolates. Genotyping (24-VNTR, 43-spacers spoli-
   gotypes, IS6110-RFLP) was undertaken for 3,454 clinical isolates from the
   Netherlands (2004-2008). The resulting database was enlarged with African
   isolates to include most human tuberculosis diversity. Assignations were
-  obtained using TB-Lineage, MIRU- VNTRPlus, SITVITWEB and an algorithm from
+  obtained using TB-Lineage, MIRU-VNTRPlus, SITVITWEB and an algorithm from
   Borile et al
  
 - Original and consensus assignations of the all isolates from the database were
@@ -60,6 +69,10 @@ https://www.ncbi.nlm.nih.gov/pubmed/24245763
 - When applied to independent datasets, it was able to suggest new sublineages
   such as pseudo-Beijing. This Lineage Prediction tool, efficient on 15-MIRU,
   24-VNTR and spoligotype data is available on the web interface “TBminer.”
+
+  EMILYN: No one really uses this TBMiner actually due to the interface not
+  being good and is inconsistent. Maybe we can work on this later to improve the
+  online service.
  
 - We successfully used Machine Learning on a large dataset to set up and make
   available the first consensual taxonomy for human Mycobacterium tuberculosis
