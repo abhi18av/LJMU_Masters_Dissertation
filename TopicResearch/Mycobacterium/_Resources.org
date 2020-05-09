@@ -115,7 +115,7 @@ up-to-date data on Whole Genome Sequencing diversity.
   sources that utilize different ways to define, name and identify the drugs and
   targets.
 
-* STRT Cao2016 - Improving Tuberculosis Diagnostics Using Deep Learning and Mobile Health Technologies among Resource-Poor and Marginalized Communities
+* [X] Cao2016 - Improving Tuberculosis Diagnostics Using Deep Learning and Mobile Health Technologies among Resource-Poor and Marginalized Communities
 ** Notes
 - Image processing algorithms, CNN
 - They proposed an online database of X-ray images - by now this might have been developed
@@ -261,9 +261,11 @@ EMILYN: Check if similar data exists for NTM or if we can download the same data
   that for some problems, for instance, predicting gene regulation in disease,
   perfect accuracy will be unattainable
  
-* STRT Deelder2019 - Machine Learning Predicts Accurately Mycobacterium tuberculosis Drug Resistance From Whole Genome Sequencing Data
+* WAIT Deelder2019 - Machine Learning Predicts Accurately Mycobacterium tuberculosis Drug Resistance From Whole Genome Sequencing Data
 ** Notes
 - Need to request code from authors
+  EMILYN: Ask Jody for the code for this paper. Perhaps this code is used inside
+  tb-profiler and if we could improve the ML model, this could be included in tb-profiler.
 - Good ML oriented paper
 ** FileName
 - Deelder2019_MLPredictsAccurately.pdf
@@ -311,8 +313,9 @@ screening.
 ** Conclusion
 * STRT Donohue2018 - Increasing nontuberculous mycobacteria reporting rates and species diversity identified in clinical laboratory reports
 ** Notes
-- This is a survey report about NTM across a couple decades
+- This is a survey report about NTM across a couple decades.
 - Could be used in building up the background context
+  EMILYN: This could be used in discussion.
 ** FileName
 - Donohue2018_IncreasingNTMReportingRates.pdf
 ** Abstract
@@ -471,12 +474,13 @@ from our previous screens results in external validation receiver operator curve
   resistance as a diagnostic tool.
 
 ** Conclusion
-* STRT Hussain2018 - Predicting treatment outcome of drug-susceptible tuberculosis patients using machine-learning models
+* [X] Hussain2018 - Predicting treatment outcome of drug-susceptible tuberculosis patients using machine-learning models
 ** Notes
 - Can use a different algorithm (XgBoost) on the dataset
 - Sample data and complete code is shared
   https://github.com/biosharp-dotnet/tuberculosis-predictive-analytics
 - Need to find the full dataset of 4000 surveyed patients
+  EMILYN: Please try to find the data
 ** FileName
 - Hussain2018_PredictingTreatmentOutcomes.pdf
 ** Abstract
@@ -496,12 +500,16 @@ from our previous screens results in external validation receiver operator curve
 - Empirical results using data of more than 4000 patients reveal that we can
   predict with more than 76% accuracy whether a TB patient would complete his (or her) treatment or not
 -
-* STRT Jamal2020 - Artificial Intelligence and Machine learning based prediction of resistant and susceptible mutations in Mycobacterium tuberculosis
+* WAIT Jamal2020 - Artificial Intelligence and Machine learning based prediction of resistant and susceptible mutations in Mycobacterium tuberculosis
+EMILYN: This is interesting and will read this paper. Perhaps can find/propose
+other projects and studies
 ** Notes
 - Used many ML algorithms, 85% accuracy
 - Could use XgBoost
 - Could conduct a similar study for NTM
+  EMILYN: This can't be used for NTM as drug database doesn't exist.
 - Mentions many online bio databases
+- Touches on BioChemistry
 ** FileName
 - Jamal2020_AIAndMLBasedPredictive.pdf
 ** Abstract
@@ -526,7 +534,8 @@ from our previous screens results in external validation receiver operator curve
 - The classification model was generated for each gene and predictions were made for
   SNVs linked with each gene for each drug
 
-* STRT Kavvas2018 - Machine learning and structural analysis of Mycobacterium tuberculosis pan-genome identifies genetic signatures of antibiotic resistance
+* WAIT Kavvas2018 - Machine learning and structural analysis of Mycobacterium tuberculosis pan-genome identifies genetic signatures of antibiotic resistance
+EMILYN: Please read this paper.
 ** Notes
 - They developed and online platform
  
@@ -635,9 +644,12 @@ from our previous screens results in external validation receiver operator curve
 -
 ** Supplementary
 *** Kouchaki2019_ApplicationOfML_Supplementary.pdf
-* STRT Kouchaki2020 - Multi-Label Random Forest Model for Tuberculosis Drug Resistance Classification and Mutation Ranking
+* DONE Kouchaki2020 - Multi-Label Random Forest Model for Tuberculosis Drug Resistance Classification and Mutation Ranking
+EMILYN: Please think of some projects. Maybe take hints from Notes
 ** Notes
 - Source code and data are both available
+
+- Maybe use XgBoost or H2O
 ** FileName
 - Kouchaki2020_MultiLabelRandomForest.pdf
 ** Abstract
@@ -978,7 +990,8 @@ from our previous screens results in external validation receiver operator curve
 ** Conclusion
 ** Supplementary
 *** Romero2020_DecisionTree_Corrigendum.pdf
-* STRT Sauer2018 - Feature selection and prediction of treatment failure in tuberculosis
+* DONE Sauer2018 - Feature selection and prediction of treatment failure in tuberculosis
+EMILYN: Please think of project(s)
 ** Notes
 - Code is available
   https://github.com/biosharp-dotnet/niaid_TB
@@ -988,7 +1001,7 @@ from our previous screens results in external validation receiver operator curve
 
 - Can use XgBoost and/or H20
 
-- Can add the data from other sources as well
+- Can add the data from other sources as well, perhaps Brazilian
 ** FileName
 - Sauer2018_FeatureSelection.pdf
 ** Abstract
@@ -1152,15 +1165,19 @@ https://deepbiolab.coding.net/s/fbdb894d-2730-425b-bac6-18ba55396bab
   treatment failures.
  
 ** Conclusion
-* STRT Yang2017 - Machine learning for classifying tuberculosis drug-resistance from DNA sequencing data
+* DONE Yang2017 - Machine learning for classifying tuberculosis drug-resistance from DNA sequencing data
+EMILYN: We could have a project proposal, which compares the various attempts in
+the field and perhaps include new data and algorithms.
 ** Notes
 - Code is available and already downloaded
 
 - Builds upon a previous publication Walker2015 for narrowing the feature set.
 
 - The data is the same as used in Walker2015, 1839 samples
+ 
 ** FileName
 - Yang2017_MachineLearning.pdf
+ 
 ** Abstract
 - Given the availability of DNA sequencing data from MTB, we developed machine
   learning models for a cohort of 1839 UK bacterial isolates to classify MTB
@@ -1190,7 +1207,7 @@ https://deepbiolab.coding.net/s/fbdb894d-2730-425b-bac6-18ba55396bab
 - Yang2017_MachineLearning_Code.zip
 - Yang2017_MachineLearning_Supplement.pdf
 - Yang2017_MachineLearning_Walker2015_BasePaper.pdf
-* STRT Yang2019 - DeepAMR for predicting co-occurrent resistance of Mycobacterium tuberculosis
+* DONE Yang2019 - DeepAMR for predicting co-occurrent resistance of Mycobacterium tuberculosis
 ** Notes
 - Code is available and already downloaded
 
