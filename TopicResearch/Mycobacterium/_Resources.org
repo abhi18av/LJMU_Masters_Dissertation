@@ -187,11 +187,15 @@ can work on NTM projects. Otherwise we can work on same data with different algo
   using genomic data to account for the complex relationship between genotype
   and drug resistance in MTB
  
-* STRT Chen2019 - Beyond multidrug resistance: Leveraging rare variants with machine and statistical learning models in Mycobacterium tuberculosis resistance prediction
+* DONE Chen2019 - Beyond multidrug resistance: Leveraging rare variants with machine and statistical learning models in Mycobacterium tuberculosis resistance prediction
+EMILYN: Check if similar data exists for NTM or if we can download the same data.
 ** Notes
 - A good in-depth ML based paper
 - Could apply the same techniques to NTM
 - Could change the algorithm and apply on the same data
+- This paper builds upon the work done by same author Chen2018
+- I was able to find the code on Github
+  https://github.com/biosharp-dotnet/wdnn
 ** FileName
 - Chen2019_BeyondMultiDrugResistance.pdf
 ** Abstract
@@ -224,10 +228,14 @@ can work on NTM projects. Otherwise we can work on same data with different algo
   of our model as a diagnostic tool for MTB drug resistance.
 
 - The MD-WDNN represented the first multidrug model to our knowledge that
-incorporated a high number of genotypic predictors known to be important to
-determining resistance for one or more included drugs
+  incorporated a high number of genotypic predictors known to be important to
+  determining resistance for one or more included drugs
 
- 
+** Supplementary
+- Chen2019_BeyondMultiDrugResistance_Supplement_4.xlsx
+- Chen2019_BeyondMultiDrugResistance_Supplement_3.xlsx
+- Chen2019_BeyondMultiDrugResistance_Supplement_2.xlsx
+- Chen2019_BeyondMultiDrugResistance_Supplement_1.docx
 * [-] Ching2018 - Opportunities and obstacles for deep learning in biology and medicine
 ** Notes
 - Found the code https://github.com/greenelab/deep-review
