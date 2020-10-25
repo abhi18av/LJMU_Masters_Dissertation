@@ -4,21 +4,15 @@
 # In[2]:
 
 
-# Import the usual suspects.
 import pandas as pd
 import numpy as np
-#import matplotlib.pyplot as plt
-#import seaborn as sns
-
-#sns.set()
-
 
 # # Feature engineering for Resistance Profile
 
 # In[69]:
 
 
-tbprofiler_df = pd.read_json("../data/raw/cohort.tbprofiler.json", encoding="UTF-8")
+tbprofiler_df = pd.read_json("../../data/raw/cohort.tbprofiler.json", encoding="UTF-8")
 tbprofiler_df = tbprofiler_df.transpose()
 #tbprofiler_df.head()
 
@@ -40,7 +34,7 @@ resistance_status_df['Resistance_Status'] = resistance_status_df.apply(lambda ro
 # In[94]:
 
 
-resistance_status_df.to_csv("../data/processed/resistance_status_df.csv")
+resistance_status_df.to_csv("../../data/processed/resistance_status_df.tsv", "\t")
 #resistance_status_df.head(10)
 
 
@@ -146,7 +140,7 @@ for col_name in renamed_drug_columns_names:
 # In[80]:
 
 
-binarized_resistance_status_df.to_csv("../data/processed/binarized_resistance_status_df.csv")
+binarized_resistance_status_df.to_csv("../../data/processed/binarized_resistance_status_df.tsv", "\t")
 
 
 # In[3]:
