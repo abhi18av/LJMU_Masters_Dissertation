@@ -28,7 +28,8 @@ for col in vcf_snps_df.columns:
     col_unique_values = list(vcf_snps_df[col].unique())
     if len(col_unique_values) > 1:
         # print('col: ', col, "\tsum: ", col_sum)
-        col_mutation_dict[col] =  dict(vcf_snps_df[col].value_counts())
+#        col_mutation_dict[col] =  dict(vcf_snps_df[col].value_counts())
+        print(col)
 #
 #
 ## In[15]:
@@ -60,8 +61,9 @@ for col in vcf_snps_df.columns:
 ## In[ ]:
 #
 #
-with open("../../data/interim/cols_with_mutations.txt", "w") as outfile:
-    outfile.write(str(col_mutation_dict))
+
+#with open("../../data/interim/cols_with_mutations.txt", "w") as outfile:
+#    outfile.write(str(col_mutation_dict))
 #
 #
 ## In[22]:
@@ -74,7 +76,7 @@ with open("../../data/interim/cols_with_mutations.txt", "w") as outfile:
 #
 #
 vcf_unique_snps_df =  vcf_snps_df[list(col_mutation_dict.keys())]
-vcf_unique_snps_df.to_csv("../data/interim/vcf_unique_snps_df.csv")
+vcf_unique_snps_df.to_csv("../../data/interim/vcf_unique_snps_df.csv")
 #vcf_unique_snps_df.head()
 
 #
