@@ -6,7 +6,7 @@ import numpy as np
 
 
 
-vcf_snps_df = pd.read_csv("../../data/interim/cols_dropped_vcf_transposed_df.csv")
+vcf_snps_df = pd.read_csv("../../data/interim/cols_dropped_vcf_transposed_df.csv", "\t")
 
 vcf_snps_df = vcf_snps_df.rename(columns={'Unnamed: 0': 'SampleID'}).set_index('SampleID')
 
@@ -40,6 +40,6 @@ def is_heterozygous_vector(allele_vector):
 
 binary_unique_snps_df= vcf_snps_df.apply(is_heterozygous_vector, axis=0)
 
-binary_unique_snps_df.to_csv("../data/processed/binary_unique_snps_df.csv")
+binary_unique_snps_df.to_csv("../data/interim/binary_unique_snps_df.csv")
 
 
