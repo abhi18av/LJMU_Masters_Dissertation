@@ -13,7 +13,7 @@ vcf_df.drop(['CHROM', 'POS'], axis=1, inplace=True)
 
 vcf_df.set_index('CHROM.POS', inplace=True)
 vcf_df.columns = list(map(lambda column: column.split(".")[0], vcf_df.columns))
-vcf_df.to_csv("../../data/interim/head100_cols_dropped_vcf_untransposed_df.csv", "\t")
+vcf_df.to_csv("../../data/interim/head100_cols_dropped_vcf_untransposed_df.tsv", "\t")
 
 vcf_df = vcf_df.transpose()
-vcf_df.to_csv("../../data/interim/head100_cols_dropped_vcf_transposed_df.csv", "\t")
+vcf_df.to_csv("../../data/interim/head100_cols_dropped_vcf_transposed_df.tsv", "\t")
