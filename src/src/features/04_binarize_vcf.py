@@ -2,13 +2,10 @@
 # coding: utf-8
 
 import pandas as pd
-import numpy as np
 
+vcf_unique_snps_df = pd.read_csv("../../data/interim/vcf_unique_snps_df.csv", "\t")
 
-
-vcf_snps_df = pd.read_csv("../../data/interim/cols_dropped_vcf_transposed_df.csv", "\t")
-
-vcf_snps_df = vcf_snps_df.rename(columns={'Unnamed: 0': 'SampleID'}).set_index('SampleID')
+vcf_unique_snps_df = vcf_unique_snps_df.rename(columns={'Unnamed: 0': 'SampleID'}).set_index('SampleID')
 
 
 ## FIXME we have completely ignored zygocity and have only focused on allel-pair-hetegenous
@@ -19,6 +16,7 @@ def split_allele_pair(allele_pair):
     second_allele = list(allele_pair)[-1]
     return [first_allele, second_allele]
 
+
 def compare_alleles(allele_pair):
     first_allele, second_allele = split_allele_pair(allele_pair)
     if first_allele == '.' or second_allele == '.':
@@ -27,19 +25,18 @@ def compare_alleles(allele_pair):
     else:
         return 1 if first_allele != second_allele else 0
 
+
 def is_heterozygous_allele(allele_pair):
     # print(allele_pair)
     # print(compare_alleles(split_allele_pair(allele_pair)))
-     compare_alleles(split_allele_pair(allele_pair))
+    compare_alleles(split_allele_pair(allele_pair))
 
 
 # NOTE Finalize the rules for reducing the Allele patterns to Homozygous and Heterozygous
 def is_heterozygous_vector(allele_vector):
-     return list(map(lambda allele: compare_alleles(split_allele_pair(allele)), allele_vector))
+    return list(map(lambda allele: compare_alleles(split_allele_pair(allele)), allele_vector))
 
 
-binary_unique_snps_df= vcf_snps_df.apply(is_heterozygous_vector, axis=0)
+binary_unique_snps_df = vcf_unique_snps_df.apply(is_heterozygous_vector, axis=0)
 
-binary_unique_snps_df.to_csv("../data/interim/binary_unique_snps_df.csv")
-
-
+binary_unique_snps_df.to_csv("../data/interim/binary_unique_snps_df.csv", "\t")
