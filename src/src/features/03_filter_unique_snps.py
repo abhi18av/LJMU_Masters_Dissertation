@@ -3,7 +3,7 @@
 
 import pandas as pd
 
-vcf_snps_df = pd.read_csv("../../data/interim/cols_dropped_vcf_transposed_df.csv", "\t")
+vcf_snps_df = pd.read_csv("../../data/interim/cols_dropped_vcf_transposed_df.tsv", "\t")
 
 vcf_snps_df = vcf_snps_df.rename(columns={'Unnamed: 0': 'SampleID'}).set_index('SampleID')
 
@@ -19,4 +19,4 @@ with open("../../data/interim/cols_with_mutations_dict.txt", "w") as outfile:
     outfile.write(str(col_mutation_dict))
 
 vcf_unique_snps_df = vcf_snps_df[list(col_mutation_dict.keys())]
-vcf_unique_snps_df.to_csv("../../data/interim/vcf_unique_snps_df.csv", "\t")
+vcf_unique_snps_df.to_csv("../../data/interim/vcf_unique_snps_df.tsv", "\t")
