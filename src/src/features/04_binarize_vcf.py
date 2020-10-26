@@ -3,7 +3,7 @@
 
 import pandas as pd
 
-vcf_unique_snps_df = pd.read_csv("../../data/interim/vcf_unique_snps_df.tsv", "\t")
+vcf_unique_snps_df = pd.read_csv("../../data/interim/head100_vcf_unique_snps_df.csv", "\t")
 
 vcf_unique_snps_df = vcf_unique_snps_df.rename(columns={'Unnamed: 0': 'SampleID'}).set_index('SampleID')
 
@@ -39,4 +39,4 @@ def is_heterozygous_vector(allele_vector):
 
 binary_unique_snps_df = vcf_unique_snps_df.apply(is_heterozygous_vector, axis=0)
 
-binary_unique_snps_df.to_csv("../data/interim/binary_unique_snps_df.tsv", "\t")
+binary_unique_snps_df.to_csv("../data/interim/head100_binary_unique_snps_df.csv", "\t")
