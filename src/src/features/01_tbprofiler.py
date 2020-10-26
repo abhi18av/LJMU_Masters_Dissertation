@@ -135,4 +135,4 @@ for col_name in renamed_drug_columns_names:
 # In[80]:
 
 
-binarized_resistance_status_df.to_csv("../../data/processed/binarized_resistance_status_df.tsv", "\t")
+binarized_resistance_status_df.to_csv("../../data/processed/head100_binarized_resistance_status_df.tsv", "\t")

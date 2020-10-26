@@ -39,4 +39,4 @@ def is_heterozygous_vector(allele_vector):
 
 binary_unique_snps_df = vcf_unique_snps_df.apply(is_heterozygous_vector, axis=0)
 
-binary_unique_snps_df.to_csv("../data/interim/head100_binary_unique_snps_df.tsv", "\t")
+binary_unique_snps_df.to_csv("../../data/interim/head100_binary_unique_snps_df.tsv", "\t")
