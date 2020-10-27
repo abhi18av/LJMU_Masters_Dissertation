@@ -4,9 +4,8 @@
 import pandas as pd
 
 # TODO use transposed df
-binary_unique_snps_df = pd.read_csv("../../data/interim/final.binary_unique_snps_df.tsv", "\t")
+binary_unique_snps_df = pd.read_csv("../../data/interim/final.binary_unique_snps_df.tsv", "\t", index_col="SampleID")
 
-binary_unique_snps_df = binary_unique_snps_df.rename({'Unnamed: 0': 'SampleID'}).set_index('SampleID')
 
 ## Ensure that every column has atleast one mutation
 
