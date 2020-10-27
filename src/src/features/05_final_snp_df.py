@@ -28,8 +28,7 @@ hetero_binary_vcf_snps_with_mutations_df = binary_unique_snps_df[list(binary_col
 
 # hetero_binary_vcf_snps_with_mutations_df = hetero_binary_vcf_snps_with_mutations_df.rename(columns= {'Unnamed: 0': 'SampleID'}).set_index('SampleID')
 
-binarized_resistance_status_df = pd.read_csv("../../data/processed/final.binarized_resistance_status_df.tsv", "\t").rename(
-    columns={'Unnamed: 0': 'SampleID'}).set_index('SampleID')
+binarized_resistance_status_df = pd.read_csv("../../data/processed/binarized_resistance_status_df.tsv", "\t").rename( columns={'Unnamed: 0': 'SampleID'}).set_index('SampleID')
 
 ## Creation of the final dataframe
 
