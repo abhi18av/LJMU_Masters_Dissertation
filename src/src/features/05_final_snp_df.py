@@ -20,7 +20,7 @@ for col in binary_unique_snps_df.columns:
 
 hetero_binary_vcf_snps_with_mutations_df = binary_unique_snps_df[list(binary_col_mutation_dict.keys())]
 
-hetero_binary_vcf_snps_with_mutations_df.to_csv("../../data/processed/final.hetero_binary_vcf_snps_with_mutations_df.tsv", "\t")
+hetero_binary_vcf_snps_with_mutations_df.to_csv("../../data/processed/final.hetero_binary_vcf_snps_with_mutations_df.tsv", "\t", index_col= "SampleID")
 
 ## hetero_binary_vcf_snps_with_mutations_df = pd.read_csv("../data/processed/hetero_binary_vcf_snps_with_mutations_df.csv", index_col='SampleID')
 
@@ -34,4 +34,4 @@ binarized_resistance_status_df = pd.read_csv("../../data/processed/binarized_res
 
 final_df = binarized_resistance_status_df.join(hetero_binary_vcf_snps_with_mutations_df)
 
-final_df.to_csv("../../data/processed/final.binarized_final_df.tsv", "\t")
+final_df.to_csv("../../data/processed/final.binarized_final_multilabel_df.tsv", "\t")
