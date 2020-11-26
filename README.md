@@ -1,7 +1,7 @@
 src
 ==============================
 
-This repository contains the code for my masters dissertation.
+This repository contains the code for my masters dissertation based on application of ML for DRP using WGS data on MTB genomes.
 
 
 Project Organization
