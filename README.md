@@ -1,7 +1,16 @@
-src
+Application of ML for DRP using WGS data on MTB genomes.
 ==============================
 
-This repository contains the code for my masters dissertation based on application of ML for DRP using WGS data on MTB genomes.
+This repository contains the code for my masters dissertation.
+
+
+To execute the code, the following execution environments are recommended.
+
+1. AWS/Azure Batch for genomic pre-processing.
+
+2. Azure ML Studio for notebooks, with a decent server.
+
+
 
 
 Project Organization
@@ -9,6 +18,7 @@ Project Organization
 
     ├── LICENSE
     ├── README.md
+    ├── conda_enviroment.yml <- The conda file needed to recreate the environment.
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
