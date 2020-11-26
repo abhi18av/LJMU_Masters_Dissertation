@@ -11,6 +11,7 @@ To execute the code, the following execution environments are recommended.
 2. Azure ML Studio for notebooks, with a decent server.
 
 
+The rest of the instructions and results are embedded within the 
 
 
 Project Organization
@@ -18,7 +19,10 @@ Project Organization
 
     ├── LICENSE
     ├── README.md
-    ├── conda_enviroment.yml <- The conda file needed to recreate the environment.
+    │
+    ├── conda_enviroment.yml <- The minimal conda file needed to recreate the environment.
+    ├── azure_enviroment.yml <- The conda file for the Azure ML studio.
+    │
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
@@ -40,7 +44,7 @@ Project Organization
     │      └── 006_pca_based_ml.ipynb
     │      └── 007_model_inspection_with_without_pca.ipynb
     │
-    ├── src                <- Source code for use in this project.
+    ├── src                
     │   ├── genomic_preprocessing           <- Scripts for genomic pre-processing
     │      └── nyu_gatk.sh
     │      └── download.nf
