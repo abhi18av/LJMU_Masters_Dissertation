@@ -11,7 +11,7 @@ To execute the code, the following execution environments are recommended.
 2. Azure ML Studio for notebooks, with a decent server.
 
 
-The rest of the instructions and results are embedded within the 
+The rest of the instructions  are embedded within the `notebooks/FINAL/*ipynb` notebooks.
 
 
 Project Organization
