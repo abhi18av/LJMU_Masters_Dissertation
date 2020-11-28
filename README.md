@@ -1,7 +1,11 @@
 Application of ML for DRP using WGS data on MTB genomes.
 ==============================
 
-This repository contains the code for my masters dissertation.
+This repository contains the code for my masters dissertation. 
+
+[![DOI](https://zenodo.org/badge/262081640.svg)](https://zenodo.org/badge/latestdoi/262081640)
+
+
 
 
 To execute the code, the following execution environments are recommended.
